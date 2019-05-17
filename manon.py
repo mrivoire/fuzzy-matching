@@ -16,7 +16,7 @@ automate_states = {} # dictionnaire contenant tous les etats de l'automate : les
 # La fonction add_automate_state est appelee lors du parcours de l'automate et permet de creer un dict contenant tous les etats de l'automate une et une fois seulement
 # Si le label fait deja partie du dictionnaire alors, elle ne fait rien, sinon elle ajoute le nouveau label et cree l'etat correspondant avec add_state()
 def add_automate_state(state_label): 
-    if not (state_label in automate_states):
+    if (state_label not in automate_states):
         automate_states[state_label] = automate.add_state()
 
 def creation_automata():
@@ -89,7 +89,7 @@ def convertSymToLabel(symbol):
     return(newSym)
 
 def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
-    # Creation des etats de l'automate 
+    # Creation des etats de l'automate
     dict_levenshtein_states = {}
     for column in range(len(ref_string) + 1):
         for row in range(levenshtein_distance + 1):
@@ -104,7 +104,7 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
     automata = {}
     weights = [0, 1, 1,1]
     arcs_labels = []
-    dsts_states = []
+    dst_states = []
     automata_voc = ["epsilon", "*"]
     automata_voc.extend(ref_string)
 
@@ -112,32 +112,44 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
         nb_consummed_chars = int(state_label.split(";")[0]) # 1er caractere du label
         nb_elementary_operations = int(state_label.split(";")[1]) # 2nd caractere du label
 
-
+        set_arcs = {}
         arcs_labels = []
-        charFromRefStr = ref_string[nb_consummed_chars - 1]
+        if nb_consummed_chars == len(ref_string):
+            charFromRefStr = "epsilon"
+        else:
+            charFromRefStr = ref_string[nb_consummed_chars]
 
-        up_dst_label = [str(nb_consummed_chars) + ";" + str(nb_elementary_operations + 1)]
+        up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations + 1)
         # print("up", up_dst_label)
-        diag_dst_label = [str(nb_consummed_chars + 1) + ";" + str(nb_elementary_operations + 1)]
+        diag_dst_label = str(nb_consummed_chars + 1) + ";" + str(nb_elementary_operations + 1)
         # print("diag", diag_dst_label)
-        right_dst_label = [str(nb_consummed_chars + 1) + ";" + str(nb_elementary_operations)]
+        right_dst_label = str(nb_consummed_chars + 1) + ";" + str(nb_elementary_operations)
         # print("right", right_dst_label)
 
         is_last_column = nb_consummed_chars == len(ref_string)
         is_last_row = nb_elementary_operations == levenshtein_distance
         if is_last_column and is_last_row:
-            output_arc_label = "end"
+            output_arc_label = "epsilon:epsilon:0"
+            
+            set_arcs[output_arc_label] = []
         elif is_last_column:
             insertion_arc_label = "*:epsilon:1"
             arcs_labels.append(insertion_arc_label)
 
             up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations)
-            dsts_states.append(up_dst_label)
+            dst_states.append(up_dst_label)
+
+            set_arcs[insertion_arc_label] = [up_dst_label]
+
         elif is_last_row:
             accepting_arc_label = charFromRefStr + ":" + charFromRefStr + ":" + str(weights[0])
             arcs_labels.append(accepting_arc_label)
 
-            right_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations)
+            right_dst_label = str(nb_consummed_chars  + 1) + ";" + str(nb_elementary_operations)
+            dst_states.append(right_dst_label)
+
+            set_arcs[accepting_arc_label] = [right_dst_label]
+
         else:
             accepting_arc_label = charFromRefStr + ":" + charFromRefStr + ":" + str(weights[0])
             deletion_arc_label = "epsilon:" + charFromRefStr + ":" + str(weights[1])
@@ -148,58 +160,46 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
             arcs_labels.append(substitution_arc_label)
             arcs_labels.append(insertion_arc_label)
 
-                    dsts_states.append(up_dst_label)
-                    dsts_states.append(diag_dst_label)
-                    dsts_states.append(diag_dst_label)
-                    dsts_states.append(right_dst_label)
+            dst_states.append(up_dst_label)
+            dst_states.append(diag_dst_label)
+            dst_states.append(diag_dst_label)
+            dst_states.append(right_dst_label)
 
-            # print('state_label', state_label)
-            # print('charFromRefStr', charFromRefStr)
-            # print('accepting_arc_label', accepting_arc_label)
-            # print('deletion_arc_label', deletion_arc_label)
-            # print('substitution_arc_label', substitution_arc_label)
-            # print('insertion_arc_label', insertion_arc_label)
+            set_arcs[accepting_arc_label] = [right_dst_label]
+            set_arcs[deletion_arc_label] = [diag_dst_label]
+            set_arcs[substitution_arc_label] = [diag_dst_label, up_dst_label]
 
-        # if state_label == '0;0' :
-        #     print('state_label', state_label)
-        #     print('charFromRefStr', charFromRefStr)
-        #     print('accepting_arc_label', accepting_arc_label)
-        #     print('deletion_arc_label', deletion_arc_label)
-        #     print('substitution_arc_label', substitution_arc_label)
-        #     print('insertion_arc_label', insertion_arc_label)
-
-        set_arcs = {}
-        for index in range(len(arcs_labels)):
-            arc_label = arcs_labels[index]
-            dst_state_label = dsts_states[index]
-            set_arcs[arc_label] = (dst_state_label)
-        
         automata[state_label] = set_arcs
+        # print(automata[state_label])
 
     # print(automata)
 
     # Display Automata in LaTeX : 
 
-    # print("digraph G {")
+    print("digraph G {")
+    i = 1
+    states_ids = {}
 
-    # for state_label, state in dict_levenshtein_states.iteritems():
-    #     node_index = state_label.split(";")[0] + state_label.split(";")[1]
-    #     display_node = node_index + "[label=\"" + state_label + "\"];"
-    #     print(display_node)
+    for state_label, state in dict_levenshtein_states.iteritems():
+        node_index = state_label.split(";")[0] + state_label.split(";")[1]
+        display_node = str(i) + " [texlbl=\"" + state_label + "\"];"
+        states_ids[state_label] = str(i)
+        i = i + 1
+        print(display_node)
 
-    # for state_label, state in automata.iteritems():
-    #     # print("state_label: ", state_label, state)
-    #     src_index = state_label.split(";")[0] + state_label.split(";")[1]
-    #     # print(src_index)
-    #     for arc_label, dsts_states in set_arcs.iteritems():
-    #         # print("dsts_states: ", dsts_states)
-    #         for dst_state_label in dsts_states:
-    #             # print("dst_state_label: " + dst_state_label)
-    #             dst_index = dst_state_label.split(";")[0] + dst_state_label.split(";")[1]
-    #             # print(dst_index)
-    #             display_edge = src_index + "->" + dst_index + "[label=\""  + arc_label + "\"];"
-    #             # print(display_edge)    
-    # print("}")         
+    for state_label, state in automata.iteritems():
+        # print("state_label: ", state_label, state)
+        src_index = state_label.split(";")[0] + state_label.split(";")[1]
+        # print(src_index)
+        for arc_label, dsts_states in set_arcs.iteritems():
+            # print("dsts_states: ", dsts_states)
+            for dst_state_label in dsts_states:
+                # print("dst_state_label: ", dst_state_label)
+                dst_index = dst_state_label.split(";")[0] + dst_state_label.split(";")[1]
+                # print(dst_index)
+                display_edge = states_ids[state_label] + "->" + states_ids[dst_state_label] + " [label=\""  + arc_label + "\"];"
+                print(display_edge)    
+    print("}")         
 
     return(automata) 
 
@@ -217,20 +217,22 @@ def Automata_Building(ref_string, levenshtein_distance, output_weight):
     
     for src_label, set_arcs in levenshtein_automata.iteritems():
         add_automate_state(src_label)
-        for arc_label, set_dsts in set_arcs.iteritems():
-            for dst_label in set_dsts:
+        for arc_label, dst_states in set_arcs.iteritems():
+            for dst_label in dst_states:
                 add_automate_state(dst_label)
 
-    print(automate)
+    # print(automate_states)
+
     # # Creation des arcs de l'automate
 
     for src_label, set_arcs in levenshtein_automata.iteritems():
-        for arc_label, set_dsts in set_arcs.iteritems():
+        for arc_label, dst_states in set_arcs.iteritems():
             transmitted_char = arc_label.split(":")[0]
             consummed_char = arc_label.split(":")[1]
             weight = arc_label.split(":")[2]
             # print(transmitted_char, consummed_char, weight)
-            for dst_label in set_dsts:
+            for dst_label in dst_states:
+                # print(dst_label)
                 automate.add_arc(automate_states[src_label], fst.Arc(int(convertSymToLabel(transmitted_char)), int(convertSymToLabel(consummed_char)), fst.Weight(automate.weight_type(), int(weight)), automate_states[dst_label]))
     
     automate.set_start(automate_states[label_inital_state])
@@ -239,6 +241,18 @@ def Automata_Building(ref_string, levenshtein_distance, output_weight):
     # print(automate)
 
     return(automate)
+
+# def Matcher(automata, start, accepted_strings, accepted_symbol, visited = None):
+#     if visited is None:
+#         visited = set()
+#     visited.add(start)
+#     if accepted_strings is None:
+#         accepted_strings = set()
+#     accepted_strings.add(accepted_symbol)
+#     for next in automata[start] - visited:
+#         accepted_strings.addAll(Matcher(automata, next, accepted_strings, visited))
+#     return accepted_strings
+
 
 def Levenshtein_Matcher(ref_string, hypothesis_string, levenshtein_distance, output_weight):
     # automata = fst.Fst()
@@ -348,8 +362,8 @@ def main():
     ]
 
     # creation_automata()
-    Levenshtein_Automata_Dico("manon", 2)
-    # Automata_Building("manon", 2, 5)
+    dict_automata = Levenshtein_Automata_Dico("manon", 2)
+    Automata_Building("manon", 2, 5)
     # Levenshtein_Matcher("manon", "marion", 2, 5)
     
   
