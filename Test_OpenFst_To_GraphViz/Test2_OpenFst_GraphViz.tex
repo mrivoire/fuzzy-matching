@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: 0 -> 1
+  \draw [->] (70.112bp,90.219bp) .. controls (75.274bp,77.316bp) and (82.348bp,59.63bp)  .. (92.025bp,35.438bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (100.0bp,63.0bp) node {1:1:0};
+  % Edge: 0 -> 2
+  \draw [->] (51.406bp,91.34bp) .. controls (47.684bp,85.433bp) and (43.803bp,78.608bp)  .. (41.0bp,72.0bp) .. controls (37.505bp,63.759bp) and (34.709bp,54.431bp)  .. (30.263bp,35.943bp);
+  \draw (57.0bp,63.0bp) node {2:3:1};
+  % Edge: 0 -> 0
+  \draw [->] (89.347bp,112.11bp) .. controls (99.533bp,112.29bp) and (108.0bp,110.92bp)  .. (108.0bp,108.0bp) .. controls (108.0bp,106.13bp) and (104.53bp,104.89bp)  .. (89.347bp,103.89bp);
+  \draw (124.0bp,108.0bp) node {1:1:0};
+  % Edge: 0 -> 0
+  \draw [->] (88.181bp,114.84bp) .. controls (112.01bp,118.06bp) and (140.0bp,115.78bp)  .. (140.0bp,108.0bp) .. controls (140.0bp,101.32bp) and (119.33bp,98.694bp)  .. (88.181bp,101.16bp);
+  \draw (156.0bp,108.0bp) node {2:3:1};
+  % Node: 1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (99.0bp,18.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (99.0bp,18.0bp) node {s1};
+\end{scope}
+  % Node: 0
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (63.0bp,108.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (63.0bp,108.0bp) node {s0};
+\end{scope}
+  % Node: 2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (27.0bp,18.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (27.0bp,18.0bp) node {s2};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

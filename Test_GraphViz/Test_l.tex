@@ -1,0 +1,819 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: 01 -> 52
+  \draw [->] (2962.6bp,1015.1bp) .. controls (2969.8bp,1008.8bp) and (2977.8bp,1001.0bp)  .. (2984.0bp,993.0bp) .. controls (3020.1bp,946.08bp) and (3004.0bp,909.28bp)  .. (3056.0bp,881.0bp) .. controls (3106.1bp,853.76bp) and (3145.6bp,906.05bp)  .. (3183.0bp,863.0bp) .. controls (3215.1bp,826.08bp) and (3212.7bp,681.83bp)  .. (3183.0bp,643.0bp) .. controls (3141.9bp,589.26bp) and (2664.5bp,505.95bp)  .. (2517.5bp,481.35bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (3222.0bp,753.0bp) node {*:o:1};
+  % Edge: 32 -> 40
+  \draw [->] (2669.1bp,386.63bp) .. controls (2741.2bp,391.15bp) and (2936.6bp,404.58bp)  .. (2999.0bp,421.0bp) .. controls (3016.4bp,425.57bp) and (3285.2bp,535.96bp)  .. (3295.0bp,551.0bp) .. controls (3303.7bp,564.4bp) and (3299.6bp,571.68bp)  .. (3295.0bp,587.0bp) .. controls (3280.8bp,633.97bp) and (3272.2bp,648.24bp)  .. (3234.0bp,679.0bp) .. controls (2972.8bp,889.25bp) and (2846.5bp,866.17bp)  .. (2513.0bp,901.0bp) .. controls (2369.6bp,915.98bp) and (2332.3bp,903.12bp)  .. (2189.0bp,919.0bp) .. controls (2164.9bp,921.67bp) and (2138.0bp,926.14bp)  .. (2107.1bp,931.83bp);
+  \draw (3299.0bp,661.0bp) node {epsilon:n:1};
+  % Edge: 31 -> 20
+  \draw [->] (1145.1bp,1027.1bp) .. controls (1083.4bp,1022.4bp) and (933.57bp,1009.7bp)  .. (886.0bp,993.0bp) .. controls (812.21bp,967.09bp) and (799.81bp,946.21bp)  .. (736.0bp,901.0bp) .. controls (693.47bp,870.86bp) and (691.55bp,850.47bp)  .. (645.0bp,827.0bp) .. controls (584.36bp,796.42bp) and (563.29bp,803.77bp)  .. (497.0bp,789.0bp) .. controls (455.06bp,779.65bp) and (432.48bp,801.3bp)  .. (402.0bp,771.0bp) .. controls (331.73bp,701.15bp) and (341.19bp,646.92bp)  .. (366.0bp,551.0bp) .. controls (377.71bp,505.74bp) and (394.16bp,499.79bp)  .. (417.0bp,459.0bp) .. controls (499.49bp,311.63bp) and (470.01bp,196.02bp)  .. (631.0bp,145.0bp) .. controls (730.67bp,113.42bp) and (1483.6bp,109.54bp)  .. (1670.9bp,109.04bp);
+  \draw (396.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 11 -> 40
+  \draw [->] (416.1bp,1026.8bp) .. controls (518.92bp,1018.6bp) and (894.8bp,989.15bp)  .. (1205.0bp,973.0bp) .. controls (1430.2bp,961.28bp) and (1486.7bp,964.49bp)  .. (1712.0bp,955.0bp) .. controls (1833.4bp,949.89bp) and (1977.1bp,942.49bp)  .. (2053.7bp,938.46bp);
+  \draw (1234.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 51 -> 22
+  \draw [->] (1859.6bp,550.81bp) .. controls (1864.9bp,504.43bp) and (1885.8bp,381.66bp)  .. (1963.0bp,329.0bp) .. controls (1984.4bp,314.43bp) and (2402.2bp,312.48bp)  .. (2428.0bp,311.0bp) .. controls (2498.7bp,306.95bp) and (2581.1bp,300.24bp)  .. (2638.0bp,295.38bp);
+  \draw (1908.0bp,431.0bp) node {a:a:0};
+  % Edge: 01 -> 30
+  \draw [->] (2921.0bp,1020.6bp) .. controls (2890.5bp,1009.2bp) and (2837.5bp,986.4bp)  .. (2800.0bp,955.0bp) .. controls (2768.4bp,928.51bp) and (2774.1bp,909.15bp)  .. (2744.0bp,881.0bp) .. controls (2657.4bp,800.14bp) and (2631.4bp,777.95bp)  .. (2521.0bp,735.0bp) .. controls (2329.1bp,660.33bp) and (2265.9bp,699.54bp)  .. (2061.0bp,679.0bp) .. controls (2023.0bp,675.19bp) and (1979.6bp,669.79bp)  .. (1939.7bp,664.59bp);
+  \draw (2739.5bp,845.0bp) node {n:n:0};
+  % Edge: 40 -> 22
+  \draw [->] (2107.1bp,931.57bp) .. controls (2128.8bp,927.29bp) and (2160.8bp,921.62bp)  .. (2189.0bp,919.0bp) .. controls (2383.8bp,900.87bp) and (2876.8bp,937.05bp)  .. (3069.0bp,901.0bp) .. controls (3179.2bp,880.33bp) and (3201.4bp,854.21bp)  .. (3304.0bp,809.0bp) .. controls (3428.5bp,754.18bp) and (3494.6bp,784.02bp)  .. (3581.0bp,679.0bp) .. controls (3631.0bp,618.28bp) and (3687.6bp,385.62bp)  .. (3633.0bp,329.0bp) .. controls (3616.6bp,311.93bp) and (2877.9bp,297.0bp)  .. (2692.2bp,293.5bp);
+  \draw (3634.0bp,615.0bp) node {a:a:0};
+  % Edge: 20 -> 20
+  \draw [->] (1722.5bp,117.12bp) .. controls (1733.5bp,117.89bp) and (1743.0bp,115.19bp)  .. (1743.0bp,109.0bp) .. controls (1743.0bp,104.84bp) and (1738.7bp,102.26bp)  .. (1722.5bp,100.88bp);
+  \draw (1773.0bp,109.0bp) node {epsilon:m:1};
+  % Edge: 41 -> 33
+  \draw [->] (2479.1bp,842.84bp) .. controls (2566.5bp,835.87bp) and (2837.7bp,814.08bp)  .. (2877.0bp,809.0bp) .. controls (2928.5bp,802.36bp) and (2940.5bp,795.32bp)  .. (2992.0bp,789.0bp) .. controls (3102.6bp,775.44bp) and (3133.5bp,796.19bp)  .. (3242.0bp,771.0bp) .. controls (3283.6bp,761.35bp) and (3289.7bp,745.8bp)  .. (3331.0bp,735.0bp) .. controls (3336.9bp,733.45bp) and (3762.4bp,681.57bp)  .. (3768.0bp,679.0bp) .. controls (3863.6bp,634.64bp) and (3969.7bp,450.76bp)  .. (3985.0bp,403.0bp) .. controls (4131.1bp,-54.204bp) and (3438.1bp,122.04bp)  .. (2963.0bp,54.0bp) .. controls (2874.1bp,41.274bp) and (2769.3bp,28.646bp)  .. (2704.8bp,21.08bp);
+  \draw (3993.0bp,431.0bp) node {*:a:1};
+  % Edge: 00 -> 51
+  \draw [->] (790.93bp,1014.1bp) .. controls (822.63bp,985.04bp) and (896.83bp,920.32bp)  .. (969.0bp,881.0bp) .. controls (1053.0bp,835.23bp) and (1281.9bp,760.77bp)  .. (1374.0bp,735.0bp) .. controls (1412.9bp,724.13bp) and (1425.2bp,731.16bp)  .. (1463.0bp,717.0bp) .. controls (1525.3bp,693.67bp) and (1533.2bp,671.97bp)  .. (1593.0bp,643.0bp) .. controls (1633.6bp,623.37bp) and (1643.9bp,618.14bp)  .. (1687.0bp,605.0bp) .. controls (1732.5bp,591.13bp) and (1786.4bp,580.75bp)  .. (1831.6bp,573.07bp);
+  \draw (1228.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 51 -> 10
+  \draw [->] (1884.5bp,573.22bp) .. controls (1939.6bp,582.03bp) and (2062.3bp,601.83bp)  .. (2071.0bp,605.0bp) .. controls (2102.5bp,616.42bp) and (2109.5bp,622.56bp)  .. (2136.0bp,643.0bp) .. controls (2153.9bp,656.82bp) and (2151.7bp,669.04bp)  .. (2172.0bp,679.0bp) .. controls (2229.1bp,707.0bp) and (2254.8bp,673.81bp)  .. (2314.0bp,697.0bp) .. controls (2328.2bp,702.58bp) and (2328.6bp,709.66bp)  .. (2342.0bp,717.0bp) .. controls (2360.9bp,727.33bp) and (2367.1bp,726.67bp)  .. (2387.0bp,735.0bp) .. controls (2390.0bp,736.26bp) and (2393.1bp,737.6bp)  .. (2405.5bp,742.96bp);
+  \draw (2191.5bp,661.0bp) node {m:m:0};
+  % Edge: 40 -> 32
+  \draw [->] (2107.1bp,932.04bp) .. controls (2128.9bp,928.04bp) and (2160.9bp,922.52bp)  .. (2189.0bp,919.0bp) .. controls (2283.3bp,907.18bp) and (2307.5bp,910.47bp)  .. (2402.0bp,901.0bp) .. controls (2438.5bp,897.34bp) and (2694.7bp,873.04bp)  .. (2730.0bp,863.0bp) .. controls (2784.3bp,847.55bp) and (2798.2bp,840.6bp)  .. (2845.0bp,809.0bp) .. controls (2944.6bp,741.78bp) and (2973.6bp,723.05bp)  .. (3043.0bp,625.0bp) .. controls (3073.5bp,581.86bp) and (3105.6bp,560.79bp)  .. (3083.0bp,513.0bp) .. controls (3076.1bp,498.44bp) and (2985.8bp,427.25bp)  .. (2971.0bp,421.0bp) .. controls (2919.1bp,399.17bp) and (2754.0bp,389.67bp)  .. (2669.0bp,385.98bp);
+  \draw (3057.5bp,661.0bp) node {epsilon:a:1};
+  % Edge: 11 -> 33
+  \draw [->] (362.04bp,1027.8bp) .. controls (295.39bp,1024.6bp) and (124.45bp,1014.4bp)  .. (72.0bp,993.0bp) .. controls (34.459bp,977.7bp) and (0.0bp,977.54bp)  .. (0.0bp,937.0bp) .. controls (0.0bp,937.0bp) and (0.0bp,937.0bp)  .. (0.0bp,109.0bp) .. controls (0.0bp,33.805bp) and (85.923bp,66.921bp)  .. (160.0bp,54.0bp) .. controls (223.88bp,42.857bp) and (2333.1bp,21.437bp)  .. (2650.9bp,18.268bp);
+  \draw (16.0bp,523.0bp) node {*:a:1};
+  % Edge: 21 -> 33
+  \draw [->] (1725.2bp,196.11bp) .. controls (1860.9bp,170.74bp) and (2483.8bp,54.294bp)  .. (2651.7bp,22.91bp);
+  \draw (2301.0bp,109.0bp) node {*:a:1};
+  % Edge: 11 -> 10
+  \draw [->] (413.52bp,1021.5bp) .. controls (514.65bp,990.71bp) and (909.86bp,874.24bp)  .. (1244.0bp,827.0bp) .. controls (1406.1bp,804.08bp) and (1449.5bp,829.43bp)  .. (1612.0bp,809.0bp) .. controls (1656.1bp,803.45bp) and (1665.8bp,794.08bp)  .. (1710.0bp,789.0bp) .. controls (1995.8bp,756.12bp) and (2072.1bp,810.59bp)  .. (2357.0bp,771.0bp) .. controls (2369.1bp,769.32bp) and (2382.1bp,766.37bp)  .. (2403.3bp,760.69bp);
+  \draw (961.5bp,891.0bp) node {m:m:0};
+  % Edge: 20 -> 32
+  \draw [->] (1725.2bp,110.22bp) .. controls (1862.5bp,116.37bp) and (2473.9bp,143.84bp)  .. (2476.0bp,145.0bp) .. controls (2498.4bp,157.41bp) and (2589.0bp,299.92bp)  .. (2631.5bp,368.07bp);
+  \draw (2587.5bp,247.0bp) node {epsilon:a:1};
+  % Edge: 41 -> 30
+  \draw [->] (2425.2bp,841.51bp) .. controls (2388.9bp,836.37bp) and (2322.2bp,825.57bp)  .. (2267.0bp,809.0bp) .. controls (2224.6bp,796.27bp) and (2211.1bp,796.63bp)  .. (2175.0bp,771.0bp) .. controls (2157.6bp,758.6bp) and (2161.7bp,745.49bp)  .. (2143.0bp,735.0bp) .. controls (2104.0bp,713.09bp) and (2085.2bp,734.42bp)  .. (2044.0bp,717.0bp) .. controls (2029.9bp,711.04bp) and (2029.6bp,704.04bp)  .. (2016.0bp,697.0bp) .. controls (1994.4bp,685.81bp) and (1968.6bp,676.8bp)  .. (1938.4bp,667.68bp);
+  \draw (2191.5bp,753.0bp) node {n:n:0};
+  % Edge: 42 -> 22
+  \draw [->] (1675.2bp,1026.2bp) .. controls (1644.4bp,1022.2bp) and (1592.9bp,1012.9bp)  .. (1553.0bp,993.0bp) .. controls (1466.6bp,949.79bp) and (1371.0bp,791.47bp)  .. (1364.0bp,771.0bp) .. controls (1333.0bp,680.47bp) and (1426.4bp,587.6bp)  .. (1465.0bp,551.0bp) .. controls (1493.3bp,524.2bp) and (1508.5bp,529.14bp)  .. (1544.0bp,513.0bp) .. controls (1656.7bp,461.7bp) and (1688.6bp,457.1bp)  .. (1800.0bp,403.0bp) .. controls (1861.9bp,372.94bp) and (1869.6bp,347.18bp)  .. (1936.0bp,329.0bp) .. controls (2041.5bp,300.09bp) and (2318.8bp,317.14bp)  .. (2428.0bp,311.0bp) .. controls (2498.7bp,307.02bp) and (2581.1bp,300.29bp)  .. (2638.0bp,295.4bp);
+  \draw (1402.0bp,661.0bp) node {a:a:0};
+  % Edge: 40 -> 10
+  \draw [->] (2102.4bp,925.93bp) .. controls (2115.3bp,919.09bp) and (2131.8bp,909.95bp)  .. (2146.0bp,901.0bp) .. controls (2158.9bp,892.84bp) and (2160.9bp,888.91bp)  .. (2174.0bp,881.0bp) .. controls (2184.5bp,874.66bp) and (2331.8bp,801.03bp)  .. (2406.1bp,763.9bp);
+  \draw (2296.5bp,845.0bp) node {m:m:0};
+  % Edge: 51 -> 20
+  \draw [->] (1832.5bp,562.5bp) .. controls (1817.1bp,558.75bp) and (1797.0bp,554.15bp)  .. (1779.0bp,551.0bp) .. controls (1714.6bp,539.72bp) and (1692.3bp,560.45bp)  .. (1633.0bp,533.0bp) .. controls (1539.9bp,489.94bp) and (1508.0bp,441.57bp)  .. (1508.0bp,339.0bp) .. controls (1508.0bp,339.0bp) and (1508.0bp,339.0bp)  .. (1508.0bp,201.0bp) .. controls (1508.0bp,166.93bp) and (1608.2bp,133.82bp)  .. (1672.8bp,115.55bp);
+  \draw (1538.0bp,339.0bp) node {epsilon:m:1};
+  % Edge: 20 -> 30
+  \draw [->] (1671.1bp,111.43bp) .. controls (1618.3bp,116.47bp) and (1503.2bp,128.96bp)  .. (1467.0bp,145.0bp) .. controls (1354.9bp,194.71bp) and (1333.2bp,285.69bp)  .. (1369.0bp,403.0bp) .. controls (1433.6bp,614.6bp) and (1763.3bp,652.67bp)  .. (1885.7bp,660.07bp);
+  \draw (1385.5bp,385.0bp) node {n:n:0};
+  % Edge: 11 -> 20
+  \draw [->] (361.8bp,1027.6bp) .. controls (280.67bp,1022.5bp) and (46.0bp,1002.3bp)  .. (46.0bp,937.0bp) .. controls (46.0bp,937.0bp) and (46.0bp,937.0bp)  .. (46.0bp,615.0bp) .. controls (46.0bp,464.28bp) and (391.08bp,189.77bp)  .. (535.0bp,145.0bp) .. controls (589.93bp,127.91bp) and (1468.1bp,112.73bp)  .. (1671.0bp,109.43bp);
+  \draw (92.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 30 -> 40
+  \draw [->] (1923.7bp,677.75bp) .. controls (1932.8bp,690.61bp) and (1947.1bp,707.69bp)  .. (1964.0bp,717.0bp) .. controls (2004.7bp,739.38bp) and (2035.9bp,700.48bp)  .. (2067.0bp,735.0bp) .. controls (2072.7bp,741.34bp) and (2077.8bp,854.22bp)  .. (2080.3bp,918.73bp);
+  \draw (2104.0bp,799.0bp) node {epsilon:n:1};
+  % Edge: 52 -> 41
+  \draw [->] (2517.5bp,481.25bp) .. controls (2535.9bp,485.75bp) and (2559.3bp,494.84bp)  .. (2571.0bp,513.0bp) .. controls (2606.8bp,568.4bp) and (2587.8bp,756.38bp)  .. (2548.0bp,809.0bp) .. controls (2540.3bp,819.17bp) and (2511.2bp,829.23bp)  .. (2477.3bp,838.78bp);
+  \draw (2605.5bp,661.0bp) node {*:n:1};
+  % Edge: 52 -> 41
+  \draw [->] (2518.0bp,480.15bp) .. controls (2540.0bp,484.14bp) and (2570.5bp,493.07bp)  .. (2589.0bp,513.0bp) .. controls (2614.7bp,540.7bp) and (2633.9bp,642.03bp)  .. (2626.0bp,679.0bp) .. controls (2614.8bp,731.49bp) and (2579.5bp,798.12bp)  .. (2567.0bp,809.0bp) .. controls (2545.3bp,827.86bp) and (2513.8bp,836.85bp)  .. (2479.2bp,842.68bp);
+  \draw (2643.0bp,661.0bp) node {o:o:0};
+  % Edge: 30 -> 30
+  \draw [->] (1937.1bp,669.45bp) .. controls (1948.2bp,670.38bp) and (1958.0bp,667.56bp)  .. (1958.0bp,661.0bp) .. controls (1958.0bp,656.59bp) and (1953.6bp,653.88bp)  .. (1937.1bp,652.55bp);
+  \draw (1974.5bp,661.0bp) node {n:n:0};
+  % Edge: 12 -> 52
+  \draw [->] (3443.9bp,1011.1bp) .. controls (3449.6bp,980.68bp) and (3456.0bp,918.38bp)  .. (3425.0bp,881.0bp) .. controls (3410.5bp,863.46bp) and (3395.4bp,876.45bp)  .. (3377.0bp,863.0bp) .. controls (3276.6bp,789.56bp) and (3296.6bp,726.02bp)  .. (3204.0bp,643.0bp) .. controls (3180.2bp,621.68bp) and (3171.9bp,618.54bp)  .. (3143.0bp,605.0bp) .. controls (2985.2bp,531.18bp) and (2934.2bp,539.5bp)  .. (2762.0bp,513.0bp) .. controls (2678.4bp,500.13bp) and (2579.9bp,487.73bp)  .. (2517.6bp,480.16bp);
+  \draw (3311.0bp,753.0bp) node {*:o:1};
+  % Edge: 21 -> 30
+  \draw [->] (1678.7bp,213.05bp) .. controls (1668.6bp,219.51bp) and (1656.6bp,227.98bp)  .. (1647.0bp,237.0bp) .. controls (1631.3bp,251.73bp) and (1627.6bp,256.3bp)  .. (1617.0bp,275.0bp) .. controls (1555.4bp,383.33bp) and (1543.2bp,384.65bp)  .. (1561.0bp,441.0bp) .. controls (1576.7bp,490.5bp) and (1591.2bp,502.21bp)  .. (1633.0bp,533.0bp) .. controls (1712.6bp,591.64bp) and (1823.4bp,632.37bp)  .. (1888.4bp,653.56bp);
+  \draw (1577.5bp,431.0bp) node {n:n:0};
+  % Edge: 21 -> 22
+  \draw [->] (1726.1bp,202.43bp) .. controls (1802.7bp,206.65bp) and (2019.9bp,219.83bp)  .. (2089.0bp,237.0bp) .. controls (2111.4bp,242.57bp) and (2114.5bp,251.7bp)  .. (2137.0bp,257.0bp) .. controls (2149.0bp,259.82bp) and (2510.0bp,283.09bp)  .. (2638.1bp,291.28bp);
+  \draw (2153.0bp,247.0bp) node {a:a:0};
+  % Edge: 52 -> 32
+  \draw [->] (2488.0bp,459.02bp) .. controls (2487.1bp,446.87bp) and (2488.1bp,431.24bp)  .. (2497.0bp,421.0bp) .. controls (2511.0bp,404.92bp) and (2566.9bp,394.64bp)  .. (2615.3bp,387.98bp);
+  \draw (2525.5bp,431.0bp) node {epsilon:a:1};
+  % Edge: 12 -> 30
+  \draw [->] (3413.0bp,1027.0bp) .. controls (3383.8bp,1023.6bp) and (3336.9bp,1015.1bp)  .. (3303.0bp,993.0bp) .. controls (3267.8bp,970.04bp) and (3274.1bp,948.36bp)  .. (3244.0bp,919.0bp) .. controls (3175.4bp,852.13bp) and (3160.4bp,826.01bp)  .. (3072.0bp,789.0bp) .. controls (2655.1bp,614.42bp) and (2511.4bp,716.87bp)  .. (2061.0bp,679.0bp) .. controls (2022.8bp,675.79bp) and (1979.3bp,670.27bp)  .. (1939.4bp,664.81bp);
+  \draw (3203.5bp,845.0bp) node {n:n:0};
+  % Edge: 20 -> 40
+  \draw [->] (1670.9bp,109.36bp) .. controls (1515.3bp,111.52bp) and (739.29bp,123.36bp)  .. (694.0bp,145.0bp) .. controls (673.82bp,154.64bp) and (671.83bp,163.43bp)  .. (661.0bp,183.0bp) .. controls (621.96bp,253.57bp) and (529.63bp,460.52bp)  .. (565.0bp,533.0bp) .. controls (565.09bp,533.19bp) and (751.83bp,678.88bp)  .. (752.0bp,679.0bp) .. controls (817.77bp,724.06bp) and (831.0bp,743.94bp)  .. (906.0bp,771.0bp) .. controls (955.08bp,788.7bp) and (973.69bp,769.3bp)  .. (1022.0bp,789.0bp) .. controls (1036.2bp,794.77bp) and (1037.3bp,800.45bp)  .. (1050.0bp,809.0bp) .. controls (1087.1bp,834.02bp) and (1092.5bp,849.05bp)  .. (1135.0bp,863.0bp) .. controls (1191.1bp,881.39bp) and (1341.1bp,876.99bp)  .. (1400.0bp,881.0bp) .. controls (1647.1bp,897.84bp) and (1709.7bp,892.89bp)  .. (1956.0bp,919.0bp) .. controls (1986.0bp,922.18bp) and (2019.8bp,927.13bp)  .. (2054.7bp,932.63bp);
+  \draw (594.0bp,523.0bp) node {epsilon:n:1};
+  % Edge: 52 -> 33
+  \draw [->] (2468.9bp,466.63bp) .. controls (2450.2bp,457.6bp) and (2425.9bp,445.31bp)  .. (2423.0bp,441.0bp) .. controls (2397.9bp,403.1bp) and (2387.4bp,278.03bp)  .. (2407.0bp,237.0bp) .. controls (2457.3bp,131.78bp) and (2585.5bp,60.845bp)  .. (2655.2bp,27.839bp);
+  \draw (2423.0bp,247.0bp) node {*:a:1};
+  % Edge: 00 -> 21
+  \draw [->] (754.16bp,1017.2bp) .. controls (689.22bp,978.9bp) and (492.37bp,850.46bp)  .. (450.0bp,679.0bp) .. controls (435.27bp,619.39bp) and (460.98bp,596.69bp)  .. (502.0bp,551.0bp) .. controls (566.07bp,479.64bp) and (723.87bp,336.54bp)  .. (1087.0bp,237.0bp) .. controls (1155.3bp,218.29bp) and (1334.3bp,223.16bp)  .. (1405.0bp,219.0bp) .. controls (1497.3bp,213.56bp) and (1605.9bp,206.82bp)  .. (1671.8bp,202.7bp);
+  \draw (475.5bp,615.0bp) node {*:m:1};
+  % Edge: 11 -> 51
+  \draw [->] (402.13bp,1012.8bp) .. controls (444.38bp,961.99bp) and (583.01bp,804.85bp)  .. (736.0bp,735.0bp) .. controls (865.75bp,675.76bp) and (912.13bp,706.92bp)  .. (1052.0bp,679.0bp) .. controls (1124.3bp,664.56bp) and (1141.3bp,655.23bp)  .. (1214.0bp,643.0bp) .. controls (1443.4bp,604.44bp) and (1722.2bp,579.9bp)  .. (1831.2bp,571.07bp);
+  \draw (670.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 42 -> 32
+  \draw [->] (1675.9bp,1023.7bp) .. controls (1640.1bp,1015.1bp) and (1575.8bp,994.99bp)  .. (1537.0bp,955.0bp) .. controls (1506.2bp,923.25bp) and (1507.6bp,906.39bp)  .. (1499.0bp,863.0bp) .. controls (1471.2bp,723.11bp) and (1466.3bp,644.46bp)  .. (1574.0bp,551.0bp) .. controls (1632.8bp,499.98bp) and (1668.2bp,525.87bp)  .. (1745.0bp,513.0bp) .. controls (1814.7bp,501.32bp) and (1833.9bp,509.71bp)  .. (1903.0bp,495.0bp) .. controls (1955.0bp,483.94bp) and (1965.0bp,469.93bp)  .. (2017.0bp,459.0bp) .. controls (2089.2bp,443.82bp) and (2109.1bp,452.32bp)  .. (2182.0bp,441.0bp) .. controls (2226.4bp,434.11bp) and (2236.5bp,426.89bp)  .. (2281.0bp,421.0bp) .. controls (2405.5bp,404.53bp) and (2438.7bp,421.01bp)  .. (2563.0bp,403.0bp) .. controls (2577.5bp,400.89bp) and (2593.3bp,397.51bp)  .. (2616.9bp,391.79bp);
+  \draw (1512.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 20 -> 10
+  \draw [->] (1720.1bp,119.75bp) .. controls (1732.0bp,126.15bp) and (1746.6bp,134.97bp)  .. (1758.0bp,145.0bp) .. controls (1774.2bp,159.21bp) and (1778.9bp,163.51bp)  .. (1788.0bp,183.0bp) .. controls (1837.6bp,289.13bp) and (1771.6bp,347.39bp)  .. (1842.0bp,441.0bp) .. controls (1852.3bp,454.66bp) and (1861.0bp,450.88bp)  .. (1876.0bp,459.0bp) .. controls (2025.5bp,539.63bp) and (2066.1bp,554.29bp)  .. (2211.0bp,643.0bp) .. controls (2235.3bp,657.87bp) and (2238.0bp,667.49bp)  .. (2264.0bp,679.0bp) .. controls (2295.4bp,692.86bp) and (2307.8bp,682.78bp)  .. (2339.0bp,697.0bp) .. controls (2352.9bp,703.35bp) and (2354.2bp,708.66bp)  .. (2367.0bp,717.0bp) .. controls (2377.0bp,723.52bp) and (2388.2bp,730.28bp)  .. (2407.1bp,741.28bp);
+  \draw (1861.5bp,431.0bp) node {m:m:0};
+  % Edge: 20 -> 52
+  \draw [->] (1725.3bp,109.66bp) .. controls (1820.4bp,112.16bp) and (2133.6bp,122.08bp)  .. (2172.0bp,145.0bp) .. controls (2213.7bp,169.9bp) and (2210.5bp,192.97bp)  .. (2231.0bp,237.0bp) .. controls (2245.5bp,268.22bp) and (2236.5bp,281.31bp)  .. (2254.0bp,311.0bp) .. controls (2294.5bp,379.83bp) and (2308.9bp,400.95bp)  .. (2378.0bp,441.0bp) .. controls (2406.9bp,457.76bp) and (2419.4bp,448.1bp)  .. (2451.0bp,459.0bp) .. controls (2453.8bp,459.95bp) and (2456.6bp,461.03bp)  .. (2468.9bp,466.18bp);
+  \draw (2270.0bp,293.0bp) node {*:o:1};
+  % Edge: 01 -> 10
+  \draw [->] (2918.3bp,1025.9bp) .. controls (2875.9bp,1020.5bp) and (2795.8bp,1008.6bp)  .. (2772.0bp,993.0bp) .. controls (2738.4bp,970.91bp) and (2748.4bp,947.42bp)  .. (2720.0bp,919.0bp) .. controls (2647.6bp,846.66bp) and (2621.9bp,834.03bp)  .. (2530.0bp,789.0bp) .. controls (2508.4bp,778.39bp) and (2482.8bp,769.38bp)  .. (2453.0bp,760.03bp);
+  \draw (2720.5bp,891.0bp) node {m:m:0};
+  % Edge: 00 -> 30
+  \draw [->] (801.78bp,1026.6bp) .. controls (835.65bp,1022.8bp) and (895.21bp,1013.7bp)  .. (942.0bp,993.0bp) .. controls (955.99bp,986.82bp) and (956.49bp,980.16bp)  .. (970.0bp,973.0bp) .. controls (1031.1bp,940.61bp) and (1050.7bp,941.98bp)  .. (1116.0bp,919.0bp) .. controls (1237.6bp,876.2bp) and (1268.8bp,867.82bp)  .. (1391.0bp,827.0bp) .. controls (1415.0bp,818.99bp) and (1422.3bp,820.11bp)  .. (1445.0bp,809.0bp) .. controls (1498.3bp,782.95bp) and (1502.6bp,760.71bp)  .. (1556.0bp,735.0bp) .. controls (1606.0bp,710.92bp) and (1620.9bp,709.64bp)  .. (1675.0bp,697.0bp) .. controls (1745.2bp,680.6bp) and (1828.8bp,669.96bp)  .. (1886.0bp,663.67bp);
+  \draw (1407.5bp,845.0bp) node {n:n:0};
+  % Edge: 30 -> 20
+  \draw [->] (1885.8bp,659.63bp) .. controls (1757.3bp,653.0bp) and (1214.0bp,623.02bp)  .. (1148.0bp,587.0bp) .. controls (1010.8bp,512.15bp) and (981.28bp,458.66bp)  .. (930.0bp,311.0bp) .. controls (905.8bp,241.31bp) and (879.07bp,198.38bp)  .. (930.0bp,145.0bp) .. controls (955.48bp,118.3bp) and (1510.3bp,110.86bp)  .. (1670.8bp,109.23bp);
+  \draw (994.0bp,385.0bp) node {epsilon:m:1};
+  % Edge: 00 -> 20
+  \draw [->] (750.57bp,1021.2bp) .. controls (717.68bp,1010.0bp) and (658.28bp,987.06bp)  .. (615.0bp,955.0bp) .. controls (520.15bp,884.75bp) and (278.26bp,695.59bp)  .. (232.0bp,587.0bp) .. controls (225.73bp,572.28bp) and (226.82bp,566.14bp)  .. (232.0bp,551.0bp) .. controls (265.47bp,453.13bp) and (439.74bp,251.77bp)  .. (517.0bp,183.0bp) .. controls (541.43bp,161.26bp) and (548.64bp,154.27bp)  .. (580.0bp,145.0bp) .. controls (632.89bp,129.36bp) and (1472.6bp,113.12bp)  .. (1671.0bp,109.48bp);
+  \draw (262.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 52 -> 22
+  \draw [->] (2483.8bp,459.42bp) .. controls (2480.2bp,447.9bp) and (2477.9bp,432.83bp)  .. (2484.0bp,421.0bp) .. controls (2514.9bp,361.23bp) and (2588.1bp,323.39bp)  .. (2640.8bp,301.57bp);
+  \draw (2543.0bp,385.0bp) node {a:a:0};
+  % Edge: 21 -> 41
+  \draw [->] (1672.1bp,202.98bp) .. controls (1573.4bp,210.26bp) and (1236.1bp,235.25bp)  .. (1234.0bp,237.0bp) .. controls (1144.1bp,310.49bp) and (1186.9bp,379.05bp)  .. (1193.0bp,495.0bp) .. controls (1193.9bp,511.96bp) and (1191.2bp,517.03bp)  .. (1197.0bp,533.0bp) .. controls (1200.3bp,542.04bp) and (1206.2bp,541.8bp)  .. (1209.0bp,551.0bp) .. controls (1213.6bp,566.31bp) and (1213.2bp,571.56bp)  .. (1209.0bp,587.0bp) .. controls (1205.2bp,600.94bp) and (1181.4bp,629.61bp)  .. (1176.0bp,643.0bp) .. controls (1160.3bp,681.99bp) and (1158.9bp,693.25bp)  .. (1154.0bp,735.0bp) .. controls (1152.1bp,750.89bp) and (1143.3bp,759.15bp)  .. (1154.0bp,771.0bp) .. controls (1181.4bp,801.28bp) and (1296.8bp,781.9bp)  .. (1337.0bp,789.0bp) .. controls (1372.2bp,795.21bp) and (1379.5bp,804.17bp)  .. (1415.0bp,809.0bp) .. controls (1614.3bp,836.16bp) and (2119.5bp,811.38bp)  .. (2320.0bp,827.0bp) .. controls (2352.6bp,829.54bp) and (2389.4bp,834.75bp)  .. (2425.8bp,840.52bp);
+  \draw (1213.5bp,523.0bp) node {*:n:1};
+  % Edge: 21 -> 41
+  \draw [->] (1672.2bp,203.43bp) .. controls (1615.8bp,208.77bp) and (1486.5bp,222.22bp)  .. (1445.0bp,237.0bp) .. controls (1414.2bp,247.96bp) and (1407.3bp,254.34bp)  .. (1382.0bp,275.0bp) .. controls (1338.8bp,310.17bp) and (1324.9bp,318.81bp)  .. (1297.0bp,367.0bp) .. controls (1286.3bp,385.54bp) and (1185.2bp,713.83bp)  .. (1182.0bp,735.0bp) .. controls (1179.6bp,750.82bp) and (1170.9bp,759.45bp)  .. (1182.0bp,771.0bp) .. controls (1198.7bp,788.37bp) and (1591.0bp,787.63bp)  .. (1615.0bp,789.0bp) .. controls (1737.8bp,796.0bp) and (1768.2bp,801.98bp)  .. (1891.0bp,809.0bp) .. controls (2081.5bp,819.9bp) and (2129.9bp,810.09bp)  .. (2320.0bp,827.0bp) .. controls (2352.5bp,829.89bp) and (2389.4bp,835.08bp)  .. (2425.8bp,840.69bp);
+  \draw (1263.0bp,523.0bp) node {o:o:0};
+  % Edge: 02 -> 20
+  \draw [->] (4311.8bp,1026.5bp) .. controls (4384.7bp,1018.8bp) and (4581.0bp,993.1bp)  .. (4581.0bp,937.0bp) .. controls (4581.0bp,937.0bp) and (4581.0bp,937.0bp)  .. (4581.0bp,615.0bp) .. controls (4581.0bp,553.65bp) and (4532.6bp,555.12bp)  .. (4488.0bp,513.0bp) .. controls (4366.0bp,397.8bp) and (4343.6bp,352.96bp)  .. (4195.0bp,275.0bp) .. controls (4141.7bp,247.03bp) and (4123.4bp,251.64bp)  .. (4065.0bp,237.0bp) .. controls (3822.9bp,176.28bp) and (3760.0bp,162.46bp)  .. (3511.0bp,145.0bp) .. controls (3198.9bp,123.11bp) and (2415.8bp,135.95bp)  .. (2103.0bp,127.0bp) .. controls (1967.5bp,123.12bp) and (1806.6bp,114.89bp)  .. (1725.0bp,110.5bp);
+  \draw (4606.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 02 -> 32
+  \draw [->] (4289.4bp,1011.2bp) .. controls (4300.3bp,962.92bp) and (4324.1bp,826.76bp)  .. (4271.0bp,735.0bp) .. controls (4232.9bp,669.28bp) and (4197.9bp,670.19bp)  .. (4127.0bp,643.0bp) .. controls (4081.2bp,625.42bp) and (4065.7bp,636.47bp)  .. (4018.0bp,625.0bp) .. controls (3781.3bp,568.13bp) and (3733.5bp,512.63bp)  .. (3496.0bp,459.0bp) .. controls (3374.8bp,431.63bp) and (3342.7bp,433.32bp)  .. (3219.0bp,421.0bp) .. controls (3015.8bp,400.75bp) and (2771.2bp,389.95bp)  .. (2669.1bp,385.98bp);
+  \draw (4287.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 40 -> 41
+  \draw [->] (2107.8bp,934.6bp) .. controls (2159.7bp,929.64bp) and (2272.0bp,917.35bp)  .. (2307.0bp,901.0bp) .. controls (2319.3bp,895.27bp) and (2318.1bp,887.51bp)  .. (2330.0bp,881.0bp) .. controls (2356.9bp,866.26bp) and (2390.5bp,856.92bp)  .. (2425.5bp,849.42bp);
+  \draw (2346.5bp,891.0bp) node {*:n:1};
+  % Edge: 40 -> 41
+  \draw [->] (2105.7bp,929.61bp) .. controls (2124.4bp,923.44bp) and (2150.3bp,913.63bp)  .. (2171.0bp,901.0bp) .. controls (2182.6bp,893.94bp) and (2181.6bp,886.53bp)  .. (2194.0bp,881.0bp) .. controls (2252.5bp,854.85bp) and (2273.6bp,871.95bp)  .. (2337.0bp,863.0bp) .. controls (2363.3bp,859.29bp) and (2392.8bp,854.66bp)  .. (2425.5bp,849.37bp);
+  \draw (2210.0bp,891.0bp) node {o:o:0};
+  % Edge: 50 -> 30
+  \draw [->] (3842.8bp,1024.1bp) .. controls (3768.2bp,1010.1bp) and (3558.0bp,969.79bp)  .. (3530.0bp,955.0bp) .. controls (3509.4bp,944.12bp) and (3510.7bp,932.84bp)  .. (3492.0bp,919.0bp) .. controls (3464.5bp,898.63bp) and (3455.6bp,896.41bp)  .. (3425.0bp,881.0bp) .. controls (3354.6bp,845.52bp) and (3329.3bp,851.53bp)  .. (3263.0bp,809.0bp) .. controls (3221.1bp,782.14bp) and (3222.0bp,760.04bp)  .. (3179.0bp,735.0bp) .. controls (3134.3bp,708.97bp) and (3119.9bp,706.02bp)  .. (3069.0bp,697.0bp) .. controls (2958.7bp,677.47bp) and (2172.7bp,686.77bp)  .. (2061.0bp,679.0bp) .. controls (2022.8bp,676.34bp) and (1979.3bp,670.74bp)  .. (1939.4bp,665.04bp);
+  \draw (3400.5bp,845.0bp) node {n:n:0};
+  % Edge: 22 -> 41
+  \draw [->] (2692.2bp,293.23bp) .. controls (2786.3bp,294.26bp) and (3093.8bp,299.88bp)  .. (3126.0bp,329.0bp) .. controls (3271.3bp,460.2bp) and (3201.6bp,658.59bp)  .. (3183.0bp,679.0bp) .. controls (3153.7bp,711.15bp) and (3029.4bp,683.59bp)  .. (2988.0bp,697.0bp) .. controls (2957.3bp,706.95bp) and (2891.3bp,755.4bp)  .. (2863.0bp,771.0bp) .. controls (2830.6bp,788.87bp) and (2824.4bp,798.41bp)  .. (2789.0bp,809.0bp) .. controls (2781.9bp,811.13bp) and (2575.0bp,832.43bp)  .. (2478.9bp,842.26bp);
+  \draw (3231.5bp,569.0bp) node {*:n:1};
+  % Edge: 22 -> 41
+  \draw [->] (2692.1bp,293.89bp) .. controls (2787.9bp,297.22bp) and (3107.5bp,309.65bp)  .. (3149.0bp,329.0bp) .. controls (3260.9bp,381.2bp) and (3280.9bp,466.96bp)  .. (3252.0bp,587.0bp) .. controls (3241.3bp,631.64bp) and (3240.4bp,649.75bp)  .. (3205.0bp,679.0bp) .. controls (3182.9bp,697.28bp) and (3170.3bp,688.23bp)  .. (3143.0bp,697.0bp) .. controls (3000.3bp,742.8bp) and (2971.4bp,776.91bp)  .. (2825.0bp,809.0bp) .. controls (2740.8bp,827.45bp) and (2717.8bp,818.71bp)  .. (2632.0bp,827.0bp) .. controls (2582.5bp,831.78bp) and (2525.4bp,837.54bp)  .. (2478.8bp,842.26bp);
+  \draw (3275.0bp,569.0bp) node {o:o:0};
+  % Edge: 10 -> 10
+  \draw [->] (2452.1bp,761.45bp) .. controls (2463.2bp,762.38bp) and (2473.0bp,759.56bp)  .. (2473.0bp,753.0bp) .. controls (2473.0bp,748.59bp) and (2468.6bp,745.88bp)  .. (2452.1bp,744.55bp);
+  \draw (2492.5bp,753.0bp) node {m:m:0};
+  % Edge: 10 -> 32
+  \draw [->] (2453.0bp,745.56bp) .. controls (2474.9bp,738.81bp) and (2507.4bp,728.23bp)  .. (2535.0bp,717.0bp) .. controls (2571.1bp,702.32bp) and (2583.0bp,702.63bp)  .. (2614.0bp,679.0bp) .. controls (2624.8bp,670.78bp) and (2689.3bp,599.69bp)  .. (2694.0bp,587.0bp) .. controls (2706.1bp,554.58bp) and (2730.4bp,496.7bp)  .. (2691.0bp,421.0bp) .. controls (2688.5bp,416.13bp) and (2679.9bp,409.26bp)  .. (2662.0bp,397.12bp);
+  \draw (2734.5bp,569.0bp) node {epsilon:a:1};
+  % Edge: 12 -> 41
+  \draw [->] (3413.1bp,1026.0bp) .. controls (3346.8bp,1018.1bp) and (3170.4bp,994.84bp)  .. (3028.0bp,955.0bp) .. controls (2939.9bp,930.36bp) and (2925.0bp,901.91bp)  .. (2836.0bp,881.0bp) .. controls (2770.7bp,865.66bp) and (2572.2bp,852.27bp)  .. (2478.9bp,846.56bp);
+  \draw (3044.5bp,937.0bp) node {*:n:1};
+  % Edge: 12 -> 41
+  \draw [->] (3413.0bp,1028.0bp) .. controls (3354.8bp,1025.5bp) and (3213.0bp,1017.2bp)  .. (3097.0bp,993.0bp) .. controls (3068.2bp,986.99bp) and (3062.7bp,979.44bp)  .. (3034.0bp,973.0bp) .. controls (2975.8bp,959.93bp) and (2959.5bp,966.67bp)  .. (2901.0bp,955.0bp) .. controls (2775.2bp,929.9bp) and (2746.8bp,910.74bp)  .. (2622.0bp,881.0bp) .. controls (2576.0bp,870.03bp) and (2522.6bp,859.0bp)  .. (2478.0bp,850.08bp);
+  \draw (2917.0bp,937.0bp) node {o:o:0};
+  % Edge: 00 -> 22
+  \draw [->] (762.07bp,1012.8bp) .. controls (718.85bp,958.38bp) and (581.86bp,785.41bp)  .. (577.0bp,771.0bp) .. controls (555.55bp,707.43bp) and (596.31bp,671.58bp)  .. (657.0bp,643.0bp) .. controls (666.58bp,638.49bp) and (1024.9bp,592.34bp)  .. (1034.0bp,587.0bp) .. controls (1051.5bp,576.78bp) and (1046.2bp,563.73bp)  .. (1062.0bp,551.0bp) .. controls (1092.3bp,526.53bp) and (1104.9bp,527.67bp)  .. (1141.0bp,513.0bp) .. controls (1337.7bp,433.02bp) and (1389.1bp,414.91bp)  .. (1596.0bp,367.0bp) .. controls (1696.1bp,343.83bp) and (1721.8bp,339.0bp)  .. (1824.0bp,329.0bp) .. controls (2091.3bp,302.86bp) and (2159.8bp,325.17bp)  .. (2428.0bp,311.0bp) .. controls (2498.7bp,307.26bp) and (2581.1bp,300.45bp)  .. (2638.0bp,295.46bp);
+  \draw (673.0bp,661.0bp) node {a:a:0};
+  % Edge: 31 -> 30
+  \draw [->] (1196.1bp,1020.5bp) .. controls (1210.7bp,1014.5bp) and (1228.9bp,1005.4bp)  .. (1242.0bp,993.0bp) .. controls (1269.9bp,966.79bp) and (1256.2bp,943.02bp)  .. (1286.0bp,919.0bp) .. controls (1293.5bp,912.95bp) and (1606.1bp,812.68bp)  .. (1615.0bp,809.0bp) .. controls (1716.0bp,767.28bp) and (1830.4bp,706.42bp)  .. (1892.1bp,672.62bp);
+  \draw (1575.5bp,845.0bp) node {n:n:0};
+  % Edge: 32 -> 10
+  \draw [->] (2648.5bp,402.7bp) .. controls (2650.4bp,408.46bp) and (2652.1bp,414.92bp)  .. (2653.0bp,421.0bp) .. controls (2658.0bp,454.38bp) and (2650.9bp,464.74bp)  .. (2636.0bp,495.0bp) .. controls (2591.8bp,584.57bp) and (2570.7bp,602.08bp)  .. (2507.0bp,679.0bp) .. controls (2490.8bp,698.6bp) and (2469.6bp,718.16bp)  .. (2445.2bp,739.09bp);
+  \draw (2624.5bp,569.0bp) node {m:m:0};
+  % Edge: 32 -> 33
+  \draw [->] (2667.6bp,378.87bp) .. controls (2686.0bp,373.44bp) and (2710.6bp,364.01bp)  .. (2728.0bp,349.0bp) .. controls (2792.3bp,293.59bp) and (2771.0bp,249.48bp)  .. (2779.0bp,165.0bp) .. controls (2784.3bp,109.59bp) and (2757.7bp,95.825bp)  .. (2721.0bp,54.0bp) .. controls (2716.1bp,48.367bp) and (2710.2bp,42.865bp)  .. (2696.7bp,31.58bp);
+  \draw (2793.0bp,201.0bp) node {*:a:1};
+  % Edge: 50 -> 41
+  \draw [->] (3842.0bp,1028.0bp) .. controls (3779.4bp,1025.3bp) and (3619.4bp,1016.6bp)  .. (3488.0bp,993.0bp) .. controls (3454.0bp,986.91bp) and (3446.9bp,979.34bp)  .. (3413.0bp,973.0bp) .. controls (3340.9bp,959.51bp) and (3321.5bp,966.24bp)  .. (3249.0bp,955.0bp) .. controls (3084.1bp,929.43bp) and (3046.2bp,904.46bp)  .. (2881.0bp,881.0bp) .. controls (2737.1bp,860.57bp) and (2564.3bp,850.4bp)  .. (2479.2bp,846.2bp);
+  \draw (3265.5bp,937.0bp) node {*:n:1};
+  % Edge: 50 -> 41
+  \draw [->] (3842.0bp,1027.2bp) .. controls (3770.5bp,1022.2bp) and (3578.0bp,1007.8bp)  .. (3516.0bp,993.0bp) .. controls (3491.9bp,987.25bp) and (3487.6bp,980.54bp)  .. (3464.0bp,973.0bp) .. controls (3433.4bp,963.22bp) and (3424.9bp,963.92bp)  .. (3394.0bp,955.0bp) .. controls (3343.8bp,940.48bp) and (3333.3bp,929.12bp)  .. (3282.0bp,919.0bp) .. controls (3181.8bp,899.25bp) and (3154.1bp,914.84bp)  .. (3053.0bp,901.0bp) .. controls (3007.2bp,894.74bp) and (2996.8bp,887.12bp)  .. (2951.0bp,881.0bp) .. controls (2779.4bp,858.08bp) and (2572.6bp,849.03bp)  .. (2479.2bp,845.8bp);
+  \draw (3410.0bp,937.0bp) node {o:o:0};
+  % Edge: 50 -> 22
+  \draw [->] (3892.5bp,1020.0bp) .. controls (3921.7bp,1008.0bp) and (3972.3bp,984.85bp)  .. (4009.0bp,955.0bp) .. controls (4050.1bp,921.52bp) and (4067.1bp,912.91bp)  .. (4085.0bp,863.0bp) .. controls (4090.4bp,847.94bp) and (4085.3bp,843.0bp)  .. (4085.0bp,827.0bp) .. controls (4083.0bp,728.27bp) and (4117.7bp,694.51bp)  .. (4076.0bp,605.0bp) .. controls (4059.4bp,569.42bp) and (3848.8bp,387.0bp)  .. (3815.0bp,367.0bp) .. controls (3770.1bp,340.43bp) and (3755.3bp,338.45bp)  .. (3704.0bp,329.0bp) .. controls (3604.1bp,310.59bp) and (2876.2bp,296.71bp)  .. (2692.1bp,293.46bp);
+  \draw (4112.0bp,661.0bp) node {a:a:0};
+  % Edge: 20 -> 51
+  \draw [->] (1671.1bp,110.44bp) .. controls (1621.9bp,113.59bp) and (1520.3bp,122.68bp)  .. (1494.0bp,145.0bp) .. controls (1378.5bp,242.9bp) and (1408.0bp,271.64bp)  .. (1429.0bp,349.0bp) .. controls (1441.4bp,394.75bp) and (1454.0bp,403.49bp)  .. (1483.0bp,441.0bp) .. controls (1500.7bp,463.87bp) and (1549.0bp,520.27bp)  .. (1575.0bp,533.0bp) .. controls (1617.4bp,553.8bp) and (1753.8bp,563.59bp)  .. (1830.6bp,567.76bp);
+  \draw (1457.5bp,339.0bp) node {epsilon:o:1};
+  % Edge: 50 -> 33
+  \draw [->] (3896.3bp,1027.9bp) .. controls (3962.2bp,1024.9bp) and (4127.8bp,1015.4bp)  .. (4178.0bp,993.0bp) .. controls (4417.5bp,886.07bp) and (4535.0bp,785.32bp)  .. (4535.0bp,523.0bp) .. controls (4535.0bp,523.0bp) and (4535.0bp,523.0bp)  .. (4535.0bp,109.0bp) .. controls (4535.0bp,37.576bp) and (4454.2bp,67.152bp)  .. (4384.0bp,54.0bp) .. controls (4215.0bp,22.335bp) and (2949.2bp,18.495bp)  .. (2705.1bp,18.037bp);
+  \draw (4551.0bp,523.0bp) node {*:a:1};
+  % Edge: 52 -> 21
+  \draw [->] (2469.3bp,465.99bp) .. controls (2463.2bp,463.31bp) and (2456.5bp,460.71bp)  .. (2450.0bp,459.0bp) .. controls (2375.7bp,439.32bp) and (2353.5bp,455.54bp)  .. (2278.0bp,441.0bp) .. controls (2274.2bp,440.27bp) and (2147.5bp,404.6bp)  .. (2144.0bp,403.0bp) .. controls (2021.3bp,347.08bp) and (2015.1bp,287.34bp)  .. (1890.0bp,237.0bp) .. controls (1839.1bp,216.52bp) and (1775.8bp,207.53bp)  .. (1726.2bp,202.77bp);
+  \draw (2070.5bp,339.0bp) node {*:m:1};
+  % Edge: 32 -> 22
+  \draw [->] (2632.2bp,367.9bp) .. controls (2627.0bp,356.58bp) and (2622.7bp,341.56bp)  .. (2628.0bp,329.0bp) .. controls (2630.4bp,323.29bp) and (2634.2bp,318.03bp)  .. (2646.0bp,306.24bp);
+  \draw (2644.0bp,339.0bp) node {a:a:0};
+  % Edge: 42 -> 52
+  \draw [->] (1690.4bp,1012.5bp) .. controls (1671.3bp,985.5bp) and (1633.4bp,933.48bp)  .. (1616.0bp,919.0bp) .. controls (1605.6bp,910.37bp) and (1515.0bp,874.55bp)  .. (1508.0bp,863.0bp) .. controls (1499.7bp,849.33bp) and (1503.7bp,842.41bp)  .. (1508.0bp,827.0bp) .. controls (1538.0bp,719.61bp) and (1761.1bp,556.42bp)  .. (1772.0bp,551.0bp) .. controls (1865.2bp,504.72bp) and (1899.5bp,523.55bp)  .. (2003.0bp,513.0bp) .. controls (2102.1bp,502.89bp) and (2354.0bp,517.86bp)  .. (2451.0bp,495.0bp) .. controls (2454.2bp,494.25bp) and (2457.4bp,493.24bp)  .. (2469.9bp,488.28bp);
+  \draw (1579.0bp,753.0bp) node {*:o:1};
+  % Edge: 11 -> 41
+  \draw [->] (416.29bp,1027.6bp) .. controls (481.17bp,1024.1bp) and (649.66bp,1013.6bp)  .. (789.0bp,993.0bp) .. controls (832.55bp,986.57bp) and (842.3bp,978.31bp)  .. (886.0bp,973.0bp) .. controls (937.66bp,966.72bp) and (1306.9bp,977.23bp)  .. (1354.0bp,955.0bp) .. controls (1373.4bp,945.86bp) and (1366.8bp,928.43bp)  .. (1386.0bp,919.0bp) .. controls (1438.6bp,893.19bp) and (1590.9bp,908.76bp)  .. (1649.0bp,901.0bp) .. controls (1693.9bp,895.0bp) and (1704.0bp,886.18bp)  .. (1749.0bp,881.0bp) .. controls (2001.2bp,852.0bp) and (2067.0bp,884.18bp)  .. (2320.0bp,863.0bp) .. controls (2352.6bp,860.27bp) and (2389.4bp,855.08bp)  .. (2425.8bp,849.39bp);
+  \draw (1402.5bp,937.0bp) node {*:n:1};
+  % Edge: 11 -> 41
+  \draw [->] (415.64bp,1024.9bp) .. controls (479.8bp,1015.2bp) and (648.03bp,990.06bp)  .. (789.0bp,973.0bp) .. controls (1023.6bp,944.61bp) and (1082.4bp,938.01bp)  .. (1318.0bp,919.0bp) .. controls (1385.2bp,913.57bp) and (1557.4bp,923.48bp)  .. (1621.0bp,901.0bp) .. controls (1635.4bp,895.9bp) and (1634.5bp,885.86bp)  .. (1649.0bp,881.0bp) .. controls (1719.7bp,857.29bp) and (2245.7bp,869.05bp)  .. (2320.0bp,863.0bp) .. controls (2352.6bp,860.35bp) and (2389.4bp,855.15bp)  .. (2425.8bp,849.43bp);
+  \draw (1334.0bp,937.0bp) node {o:o:0};
+  % Edge: 40 -> 51
+  \draw [->] (2053.9bp,934.59bp) .. controls (2007.0bp,930.02bp) and (1913.3bp,918.88bp)  .. (1886.0bp,901.0bp) .. controls (1885.4bp,900.58bp) and (1824.4bp,809.67bp)  .. (1824.0bp,809.0bp) .. controls (1785.3bp,741.41bp) and (1759.9bp,720.44bp)  .. (1768.0bp,643.0bp) .. controls (1769.8bp,625.83bp) and (1765.1bp,618.4bp)  .. (1776.0bp,605.0bp) .. controls (1776.0bp,605.0bp) and (1803.0bp,593.17bp)  .. (1835.2bp,579.03bp);
+  \draw (1828.5bp,753.0bp) node {epsilon:o:1};
+  % Edge: 20 -> 41
+  \draw [->] (1670.9bp,109.32bp) .. controls (1521.7bp,111.19bp) and (805.93bp,121.36bp)  .. (766.0bp,145.0bp) .. controls (629.18bp,225.99bp) and (646.21bp,342.74bp)  .. (692.0bp,495.0bp) .. controls (705.92bp,541.29bp) and (716.56bp,552.09bp)  .. (750.0bp,587.0bp) .. controls (759.72bp,597.15bp) and (764.71bp,596.63bp)  .. (776.0bp,605.0bp) .. controls (797.86bp,621.2bp) and (802.92bp,625.8bp)  .. (824.0bp,643.0bp) .. controls (899.5bp,704.6bp) and (909.51bp,740.34bp)  .. (1002.0bp,771.0bp) .. controls (1078.3bp,796.29bp) and (1102.4bp,777.67bp)  .. (1182.0bp,789.0bp) .. controls (1230.3bp,795.88bp) and (1241.4bp,804.11bp)  .. (1290.0bp,809.0bp) .. controls (1745.5bp,854.84bp) and (1863.5bp,792.01bp)  .. (2320.0bp,827.0bp) .. controls (2352.6bp,829.5bp) and (2389.4bp,834.72bp)  .. (2425.8bp,840.5bp);
+  \draw (708.5bp,477.0bp) node {*:n:1};
+  % Edge: 20 -> 41
+  \draw [->] (1670.9bp,109.47bp) .. controls (1533.8bp,111.97bp) and (921.23bp,124.24bp)  .. (887.0bp,145.0bp) .. controls (683.77bp,268.26bp) and (798.68bp,472.29bp)  .. (916.0bp,679.0bp) .. controls (926.23bp,697.02bp) and (927.34bp,703.43bp)  .. (943.0bp,717.0bp) .. controls (956.22bp,728.46bp) and (963.0bp,726.0bp)  .. (978.0bp,735.0bp) .. controls (1002.1bp,749.46bp) and (1003.5bp,761.53bp)  .. (1030.0bp,771.0bp) .. controls (1122.4bp,804.05bp) and (1153.7bp,770.47bp)  .. (1250.0bp,789.0bp) .. controls (1279.7bp,794.71bp) and (1285.2bp,804.24bp)  .. (1315.0bp,809.0bp) .. controls (1535.6bp,844.19bp) and (2097.3bp,809.88bp)  .. (2320.0bp,827.0bp) .. controls (2352.6bp,829.5bp) and (2389.4bp,834.72bp)  .. (2425.8bp,840.5bp);
+  \draw (834.0bp,477.0bp) node {o:o:0};
+  % Edge: 12 -> 10
+  \draw [->] (3414.0bp,1024.0bp) .. controls (3335.1bp,1008.9bp) and (3103.0bp,963.76bp)  .. (3089.0bp,955.0bp) .. controls (3071.8bp,944.25bp) and (3077.9bp,930.16bp)  .. (3061.0bp,919.0bp) .. controls (2959.3bp,851.9bp) and (2583.5bp,780.69bp)  .. (2454.4bp,757.58bp);
+  \draw (3045.5bp,891.0bp) node {m:m:0};
+  % Edge: 21 -> 40
+  \draw [->] (1671.8bp,202.61bp) .. controls (1566.4bp,208.85bp) and (1191.1bp,231.46bp)  .. (1180.0bp,237.0bp) .. controls (1101.2bp,276.27bp) and (1117.7bp,327.77bp)  .. (1072.0bp,403.0bp) .. controls (866.28bp,741.7bp) and (871.54bp,696.99bp)  .. (887.0bp,717.0bp) .. controls (936.57bp,781.14bp) and (1160.2bp,794.87bp)  .. (1240.0bp,809.0bp) .. controls (1322.7bp,823.63bp) and (1345.7bp,810.67bp)  .. (1428.0bp,827.0bp) .. controls (1481.8bp,837.67bp) and (1492.4bp,851.25bp)  .. (1546.0bp,863.0bp) .. controls (1557.2bp,865.46bp) and (1944.6bp,917.4bp)  .. (1956.0bp,919.0bp) .. controls (1985.6bp,923.16bp) and (2019.2bp,928.0bp)  .. (2054.2bp,933.08bp);
+  \draw (1008.0bp,569.0bp) node {epsilon:n:1};
+  % Edge: 10 -> 21
+  \draw [->] (2427.3bp,734.92bp) .. controls (2425.9bp,723.04bp) and (2422.5bp,707.76bp)  .. (2414.0bp,697.0bp) .. controls (2403.1bp,683.29bp) and (2393.0bp,689.45bp)  .. (2379.0bp,679.0bp) .. controls (2342.5bp,651.76bp) and (2340.3bp,637.13bp)  .. (2308.0bp,605.0bp) .. controls (2299.7bp,596.8bp) and (2297.3bp,595.17bp)  .. (2289.0bp,587.0bp) .. controls (2273.1bp,571.32bp) and (2273.4bp,562.1bp)  .. (2254.0bp,551.0bp) .. controls (2225.0bp,534.38bp) and (2201.6bp,559.31bp)  .. (2181.0bp,533.0bp) .. controls (2175.5bp,526.0bp) and (2179.2bp,521.7bp)  .. (2181.0bp,513.0bp) .. controls (2182.8bp,504.44bp) and (2187.2bp,503.56bp)  .. (2189.0bp,495.0bp) .. controls (2192.3bp,479.35bp) and (2199.8bp,470.81bp)  .. (2189.0bp,459.0bp) .. controls (2159.1bp,426.22bp) and (2031.1bp,457.88bp)  .. (1990.0bp,441.0bp) .. controls (1928.1bp,415.56bp) and (1779.6bp,277.76bp)  .. (1714.7bp,216.11bp);
+  \draw (2211.5bp,477.0bp) node {*:m:1};
+  % Edge: 41 -> 22
+  \draw [->] (2478.9bp,842.27bp) .. controls (2552.1bp,834.78bp) and (2750.7bp,814.11bp)  .. (2764.0bp,809.0bp) .. controls (2778.3bp,803.5bp) and (2779.3bp,797.48bp)  .. (2792.0bp,789.0bp) .. controls (2829.9bp,763.76bp) and (2839.3bp,757.2bp)  .. (2879.0bp,735.0bp) .. controls (2894.6bp,726.27bp) and (2899.7bp,726.25bp)  .. (2915.0bp,717.0bp) .. controls (2975.0bp,680.77bp) and (2997.6bp,678.33bp)  .. (3043.0bp,625.0bp) .. controls (3110.3bp,546.04bp) and (3104.8bp,506.22bp)  .. (3115.0bp,403.0bp) .. controls (3118.3bp,369.97bp) and (3130.4bp,350.32bp)  .. (3105.0bp,329.0bp) .. controls (3074.4bp,303.38bp) and (2802.7bp,295.62bp)  .. (2692.2bp,293.43bp);
+  \draw (3106.0bp,569.0bp) node {a:a:0};
+  % Edge: 32 -> 30
+  \draw [->] (2636.4bp,402.85bp) .. controls (2627.7bp,427.46bp) and (2608.7bp,471.44bp)  .. (2577.0bp,495.0bp) .. controls (2555.0bp,511.36bp) and (2543.8bp,503.6bp)  .. (2518.0bp,513.0bp) .. controls (2477.6bp,527.74bp) and (2467.4bp,531.72bp)  .. (2429.0bp,551.0bp) .. controls (2400.5bp,565.28bp) and (2397.3bp,577.06bp)  .. (2367.0bp,587.0bp) .. controls (2296.9bp,610.02bp) and (2273.0bp,584.86bp)  .. (2202.0bp,605.0bp) .. controls (2182.1bp,610.64bp) and (2179.8bp,619.0bp)  .. (2160.0bp,625.0bp) .. controls (2140.3bp,630.97bp) and (2013.9bp,647.9bp)  .. (1939.9bp,657.55bp);
+  \draw (2534.5bp,523.0bp) node {n:n:0};
+  % Edge: 22 -> 21
+  \draw [->] (2637.9bp,291.17bp) .. controls (2538.8bp,284.44bp) and (2202.4bp,261.33bp)  .. (2192.0bp,257.0bp) .. controls (2179.5bp,251.78bp) and (2181.5bp,242.23bp)  .. (2169.0bp,237.0bp) .. controls (2129.5bp,220.48bp) and (1840.4bp,206.91bp)  .. (1726.2bp,202.09bp);
+  \draw (2209.5bp,247.0bp) node {*:m:1};
+  % Edge: 12 -> 22
+  \draw [->] (3467.0bp,1026.7bp) .. controls (3540.5bp,1019.9bp) and (3742.3bp,997.77bp)  .. (3791.0bp,955.0bp) .. controls (3836.3bp,915.23bp) and (3815.7bp,883.78bp)  .. (3836.0bp,827.0bp) .. controls (3853.5bp,778.02bp) and (3866.3bp,768.11bp)  .. (3876.0bp,717.0bp) .. controls (3882.1bp,684.68bp) and (3884.6bp,675.01bp)  .. (3877.0bp,643.0bp) .. controls (3838.7bp,480.79bp) and (3822.4bp,400.82bp)  .. (3672.0bp,329.0bp) .. controls (3627.5bp,307.74bp) and (2879.1bp,295.99bp)  .. (2692.1bp,293.36bp);
+  \draw (3897.0bp,661.0bp) node {a:a:0};
+  % Edge: 52 -> 51
+  \draw [->] (2469.3bp,488.04bp) .. controls (2463.2bp,490.73bp) and (2456.5bp,493.31bp)  .. (2450.0bp,495.0bp) .. controls (2369.2bp,516.05bp) and (2339.7bp,480.04bp)  .. (2263.0bp,513.0bp) .. controls (2250.6bp,518.35bp) and (2252.5bp,527.66bp)  .. (2240.0bp,533.0bp) .. controls (2178.6bp,559.33bp) and (1978.7bp,566.5bp)  .. (1885.2bp,568.58bp);
+  \draw (2291.5bp,523.0bp) node {epsilon:o:1};
+  % Edge: 11 -> 32
+  \draw [->] (392.06bp,1011.0bp) .. controls (396.4bp,988.45bp) and (405.69bp,949.17bp)  .. (422.0bp,919.0bp) .. controls (488.36bp,796.25bp) and (514.76bp,749.61bp)  .. (644.0bp,697.0bp) .. controls (821.92bp,624.56bp) and (884.5bp,660.47bp)  .. (1062.0bp,587.0bp) .. controls (1122.4bp,562.02bp) and (1126.9bp,533.24bp)  .. (1189.0bp,513.0bp) .. controls (1300.7bp,476.6bp) and (1598.0bp,469.95bp)  .. (1715.0bp,459.0bp) .. controls (1809.6bp,450.15bp) and (1836.5bp,466.7bp)  .. (1928.0bp,441.0bp) .. controls (1947.1bp,435.62bp) and (1948.7bp,425.86bp)  .. (1968.0bp,421.0bp) .. controls (2096.3bp,388.66bp) and (2431.8bp,419.77bp)  .. (2563.0bp,403.0bp) .. controls (2577.6bp,401.14bp) and (2593.4bp,397.8bp)  .. (2617.0bp,392.01bp);
+  \draw (672.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 50 -> 10
+  \draw [->] (3841.8bp,1027.5bp) .. controls (3792.6bp,1024.4bp) and (3686.0bp,1015.5bp)  .. (3599.0bp,993.0bp) .. controls (3554.2bp,981.41bp) and (3544.5bp,973.37bp)  .. (3502.0bp,955.0bp) .. controls (3467.7bp,940.17bp) and (3460.5bp,933.46bp)  .. (3426.0bp,919.0bp) .. controls (3271.4bp,854.17bp) and (3236.1bp,822.94bp)  .. (3072.0bp,789.0bp) .. controls (2954.8bp,764.76bp) and (2584.2bp,755.9bp)  .. (2455.1bp,753.45bp);
+  \draw (3401.5bp,891.0bp) node {m:m:0};
+  % Edge: 01 -> 41
+  \draw [->] (2918.1bp,1026.1bp) .. controls (2868.9bp,1020.6bp) and (2766.5bp,1007.7bp)  .. (2734.0bp,993.0bp) .. controls (2697.8bp,976.69bp) and (2630.5bp,898.7bp)  .. (2595.0bp,881.0bp) .. controls (2561.1bp,864.09bp) and (2518.6bp,854.7bp)  .. (2478.8bp,848.23bp);
+  \draw (2699.5bp,937.0bp) node {*:n:1};
+  % Edge: 01 -> 41
+  \draw [->] (2917.8bp,1028.5bp) .. controls (2849.8bp,1026.8bp) and (2674.0bp,1020.0bp)  .. (2623.0bp,993.0bp) .. controls (2565.1bp,962.33bp) and (2579.0bp,920.93bp)  .. (2527.0bp,881.0bp) .. controls (2514.6bp,871.44bp) and (2499.2bp,863.52bp)  .. (2476.1bp,853.57bp);
+  \draw (2596.0bp,937.0bp) node {o:o:0};
+  % Edge: 31 -> 22
+  \draw [->] (1172.3bp,1010.7bp) .. controls (1172.1bp,967.13bp) and (1165.8bp,855.9bp)  .. (1110.0bp,789.0bp) .. controls (1097.8bp,774.34bp) and (1081.3bp,787.08bp)  .. (1071.0bp,771.0bp) .. controls (1062.4bp,757.52bp) and (1063.4bp,749.07bp)  .. (1071.0bp,735.0bp) .. controls (1101.3bp,678.94bp) and (1490.9bp,442.34bp)  .. (1551.0bp,421.0bp) .. controls (1623.8bp,395.11bp) and (1649.6bp,423.84bp)  .. (1724.0bp,403.0bp) .. controls (1798.7bp,382.09bp) and (1806.6bp,346.94bp)  .. (1882.0bp,329.0bp) .. controls (2000.1bp,300.92bp) and (2306.8bp,317.6bp)  .. (2428.0bp,311.0bp) .. controls (2498.7bp,307.15bp) and (2581.1bp,300.37bp)  .. (2638.0bp,295.43bp);
+  \draw (1196.0bp,661.0bp) node {a:a:0};
+  % Edge: 42 -> 40
+  \draw [->] (1727.5bp,1022.8bp) .. controls (1793.3bp,1006.8bp) and (1969.5bp,964.07bp)  .. (2055.4bp,943.21bp);
+  \draw (1954.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 42 -> 51
+  \draw [->] (1675.3bp,1025.9bp) .. controls (1628.5bp,1020.3bp) and (1533.9bp,1007.5bp)  .. (1504.0bp,993.0bp) .. controls (1492.5bp,987.43bp) and (1466.2bp,966.63bp)  .. (1461.0bp,955.0bp) .. controls (1454.4bp,940.41bp) and (1456.1bp,934.23bp)  .. (1461.0bp,919.0bp) .. controls (1482.7bp,851.36bp) and (1496.2bp,830.31bp)  .. (1554.0bp,789.0bp) .. controls (1576.6bp,772.81bp) and (1590.8bp,786.41bp)  .. (1614.0bp,771.0bp) .. controls (1649.5bp,747.41bp) and (1646.6bp,728.79bp)  .. (1675.0bp,697.0bp) .. controls (1712.9bp,654.57bp) and (1716.5bp,636.36bp)  .. (1764.0bp,605.0bp) .. controls (1782.0bp,593.13bp) and (1804.4bp,584.35bp)  .. (1832.6bp,575.44bp);
+  \draw (1582.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 02 -> 51
+  \draw [->] (4266.8bp,1015.4bp) .. controls (4251.0bp,1003.8bp) and (4227.3bp,986.77bp)  .. (4206.0bp,973.0bp) .. controls (3987.9bp,832.1bp) and (3935.1bp,785.73bp)  .. (3691.0bp,697.0bp) .. controls (3514.7bp,632.89bp) and (3465.6bp,624.63bp)  .. (3279.0bp,605.0bp) .. controls (3033.7bp,579.19bp) and (2415.5bp,596.13bp)  .. (2169.0bp,587.0bp) .. controls (2070.0bp,583.34bp) and (1953.5bp,575.7bp)  .. (1885.0bp,570.94bp);
+  \draw (3974.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 41 -> 20
+  \draw [->] (2425.8bp,840.5bp) .. controls (2399.2bp,836.16bp) and (2356.9bp,829.84bp)  .. (2320.0bp,827.0bp) .. controls (2265.7bp,822.81bp) and (1391.7bp,826.09bp)  .. (1340.0bp,809.0bp) .. controls (1325.5bp,804.2bp) and (1326.3bp,794.44bp)  .. (1312.0bp,789.0bp) .. controls (1241.8bp,762.3bp) and (1217.5bp,786.38bp)  .. (1144.0bp,771.0bp) .. controls (1092.0bp,760.12bp) and (1081.0bp,749.8bp)  .. (1030.0bp,735.0bp) .. controls (999.97bp,726.29bp) and (982.74bp,740.39bp)  .. (962.0bp,717.0bp) .. controls (877.32bp,621.5bp) and (807.0bp,220.37bp)  .. (910.0bp,145.0bp) .. controls (940.59bp,122.61bp) and (1507.8bp,112.02bp)  .. (1670.7bp,109.4bp);
+  \draw (907.0bp,477.0bp) node {epsilon:m:1};
+  % Edge: 01 -> 32
+  \draw [->] (2966.5bp,1017.9bp) .. controls (2978.1bp,1011.4bp) and (2992.4bp,1002.6bp)  .. (3004.0bp,993.0bp) .. controls (3038.2bp,964.71bp) and (3030.9bp,938.06bp)  .. (3071.0bp,919.0bp) .. controls (3105.0bp,902.84bp) and (3383.1bp,928.29bp)  .. (3409.0bp,901.0bp) .. controls (3417.4bp,892.1bp) and (3439.6bp,728.31bp)  .. (3311.0bp,551.0bp) .. controls (3262.6bp,484.28bp) and (3225.9bp,491.03bp)  .. (3150.0bp,459.0bp) .. controls (3101.6bp,438.57bp) and (3089.4bp,431.9bp)  .. (3038.0bp,421.0bp) .. controls (2970.0bp,406.59bp) and (2763.9bp,392.57bp)  .. (2668.9bp,386.61bp);
+  \draw (3422.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 11 -> 21
+  \draw [->] (362.19bp,1025.2bp) .. controls (296.72bp,1015.1bp) and (134.0bp,985.12bp)  .. (134.0bp,937.0bp) .. controls (134.0bp,937.0bp) and (134.0bp,937.0bp)  .. (134.0bp,615.0bp) .. controls (134.0bp,575.4bp) and (164.13bp,574.51bp)  .. (196.0bp,551.0bp) .. controls (371.3bp,421.66bp) and (428.35bp,403.67bp)  .. (633.0bp,329.0bp) .. controls (666.02bp,316.95bp) and (675.81bp,319.16bp)  .. (710.0bp,311.0bp) .. controls (845.26bp,278.73bp) and (876.42bp,257.18bp)  .. (1014.0bp,237.0bp) .. controls (1140.7bp,218.42bp) and (1537.7bp,205.66bp)  .. (1671.8bp,201.75bp);
+  \draw (151.5bp,615.0bp) node {*:m:1};
+  % Edge: 30 -> 52
+  \draw [->] (1939.3bp,656.44bp) .. controls (1971.4bp,650.56bp) and (2027.3bp,639.36bp)  .. (2074.0bp,625.0bp) .. controls (2159.4bp,598.72bp) and (2176.6bp,580.51bp)  .. (2261.0bp,551.0bp) .. controls (2286.9bp,541.95bp) and (2295.4bp,545.13bp)  .. (2320.0bp,533.0bp) .. controls (2333.7bp,526.24bp) and (2333.9bp,518.92bp)  .. (2348.0bp,513.0bp) .. controls (2390.4bp,495.18bp) and (2405.9bp,508.35bp)  .. (2450.0bp,495.0bp) .. controls (2453.2bp,494.03bp) and (2456.5bp,492.88bp)  .. (2469.2bp,487.71bp);
+  \draw (2277.0bp,569.0bp) node {*:o:1};
+  % Edge: 52 -> 40
+  \draw [->] (2517.0bp,482.97bp) .. controls (2541.3bp,489.01bp) and (2578.5bp,499.41bp)  .. (2609.0bp,513.0bp) .. controls (2667.3bp,538.95bp) and (2673.4bp,561.81bp)  .. (2732.0bp,587.0bp) .. controls (2759.5bp,598.84bp) and (2777.6bp,582.16bp)  .. (2797.0bp,605.0bp) .. controls (2944.3bp,778.25bp) and (2834.4bp,786.99bp)  .. (2817.0bp,809.0bp) .. controls (2760.4bp,880.53bp) and (2501.6bp,859.22bp)  .. (2413.0bp,881.0bp) .. controls (2389.8bp,886.72bp) and (2386.2bp,895.27bp)  .. (2363.0bp,901.0bp) .. controls (2287.5bp,919.62bp) and (2266.0bp,908.6bp)  .. (2189.0bp,919.0bp) .. controls (2165.0bp,922.24bp) and (2138.1bp,926.72bp)  .. (2107.1bp,932.18bp);
+  \draw (2896.0bp,707.0bp) node {epsilon:n:1};
+  % Edge: 41 -> 21
+  \draw [->] (2425.5bp,840.79bp) .. controls (2398.9bp,836.7bp) and (2356.7bp,830.6bp)  .. (2320.0bp,827.0bp) .. controls (2187.1bp,813.97bp) and (2152.1bp,828.6bp)  .. (2020.0bp,809.0bp) .. controls (1948.1bp,798.34bp) and (1922.7bp,809.31bp)  .. (1861.0bp,771.0bp) .. controls (1843.3bp,760.02bp) and (1847.3bp,747.93bp)  .. (1831.0bp,735.0bp) .. controls (1801.4bp,711.55bp) and (1789.7bp,711.98bp)  .. (1755.0bp,697.0bp) .. controls (1561.1bp,613.2bp) and (1429.9bp,706.2bp)  .. (1309.0bp,533.0bp) .. controls (1236.8bp,429.59bp) and (1332.3bp,358.26bp)  .. (1427.0bp,275.0bp) .. controls (1451.8bp,253.16bp) and (1460.0bp,248.45bp)  .. (1491.0bp,237.0bp) .. controls (1548.4bp,215.83bp) and (1619.3bp,206.96bp)  .. (1671.9bp,202.54bp);
+  \draw (1326.5bp,523.0bp) node {*:m:1};
+  % Edge: 12 -> 21
+  \draw [->] (3467.2bp,1026.9bp) .. controls (3531.0bp,1021.8bp) and (3689.1bp,1008.0bp)  .. (3740.0bp,993.0bp) .. controls (3758.5bp,987.55bp) and (3805.1bp,969.35bp)  .. (3818.0bp,955.0bp) .. controls (3858.4bp,910.0bp) and (3824.8bp,872.99bp)  .. (3864.0bp,827.0bp) .. controls (3886.7bp,800.36bp) and (3900.6bp,802.27bp)  .. (3933.0bp,789.0bp) .. controls (3960.3bp,777.8bp) and (3976.3bp,792.09bp)  .. (3997.0bp,771.0bp) .. controls (4147.8bp,617.35bp) and (3997.4bp,412.44bp)  .. (3799.0bp,329.0bp) .. controls (3520.9bp,212.06bp) and (2756.2bp,242.63bp)  .. (2620.0bp,237.0bp) .. controls (2276.7bp,222.81bp) and (1861.3bp,207.09bp)  .. (1726.1bp,202.02bp);
+  \draw (4075.5bp,615.0bp) node {*:m:1};
+  % Edge: 02 -> 10
+  \draw [->] (4260.1bp,1021.6bp) .. controls (4198.4bp,1003.5bp) and (4034.1bp,955.49bp)  .. (3896.0bp,919.0bp) .. controls (3730.5bp,875.26bp) and (3688.8bp,865.51bp)  .. (3522.0bp,827.0bp) .. controls (3444.0bp,809.0bp) and (3425.4bp,799.05bp)  .. (3346.0bp,789.0bp) .. controls (3171.2bp,766.87bp) and (2614.3bp,756.12bp)  .. (2455.1bp,753.43bp);
+  \draw (3846.5bp,891.0bp) node {m:m:0};
+  % Edge: 51 -> 52
+  \draw [->] (1885.0bp,568.39bp) .. controls (1953.5bp,566.48bp) and (2132.4bp,559.07bp)  .. (2185.0bp,533.0bp) .. controls (2196.0bp,527.55bp) and (2192.9bp,518.24bp)  .. (2204.0bp,513.0bp) .. controls (2253.5bp,489.55bp) and (2396.8bp,508.21bp)  .. (2450.0bp,495.0bp) .. controls (2453.2bp,494.19bp) and (2456.6bp,493.15bp)  .. (2469.4bp,488.14bp);
+  \draw (2220.0bp,523.0bp) node {*:o:1};
+  % Edge: 21 -> 21
+  \draw [->] (1723.1bp,209.45bp) .. controls (1734.2bp,210.38bp) and (1744.0bp,207.56bp)  .. (1744.0bp,201.0bp) .. controls (1744.0bp,196.59bp) and (1739.6bp,193.88bp)  .. (1723.1bp,192.55bp);
+  \draw (1761.5bp,201.0bp) node {*:m:1};
+  % Edge: 41 -> 41
+  \draw [->] (2478.3bp,849.3bp) .. controls (2488.5bp,849.49bp) and (2497.0bp,848.05bp)  .. (2497.0bp,845.0bp) .. controls (2497.0bp,843.04bp) and (2493.5bp,841.75bp)  .. (2478.3bp,840.7bp);
+  \draw (2513.5bp,845.0bp) node {*:n:1};
+  % Edge: 41 -> 41
+  \draw [->] (2477.0bp,852.09bp) .. controls (2501.2bp,855.54bp) and (2530.0bp,853.18bp)  .. (2530.0bp,845.0bp) .. controls (2530.0bp,837.94bp) and (2508.5bp,835.22bp)  .. (2477.0bp,837.91bp);
+  \draw (2546.0bp,845.0bp) node {o:o:0};
+  % Edge: 52 -> 30
+  \draw [->] (2468.7bp,487.66bp) .. controls (2462.7bp,490.29bp) and (2456.2bp,492.94bp)  .. (2450.0bp,495.0bp) .. controls (2416.7bp,506.11bp) and (2404.2bp,496.87bp)  .. (2373.0bp,513.0bp) .. controls (2350.3bp,524.7bp) and (2348.7bp,533.66bp)  .. (2330.0bp,551.0bp) .. controls (2313.2bp,566.6bp) and (2313.5bp,576.76bp)  .. (2293.0bp,587.0bp) .. controls (2246.3bp,610.29bp) and (2227.7bp,592.83bp)  .. (2177.0bp,605.0bp) .. controls (2149.3bp,611.65bp) and (2143.7bp,618.05bp)  .. (2116.0bp,625.0bp) .. controls (2058.5bp,639.44bp) and (1990.5bp,650.26bp)  .. (1939.5bp,657.52bp);
+  \draw (2346.5bp,569.0bp) node {n:n:0};
+  % Edge: 42 -> 20
+  \draw [->] (1674.8bp,1027.8bp) .. controls (1587.1bp,1024.0bp) and (1312.9bp,1010.8bp)  .. (1226.0bp,993.0bp) .. controls (1101.8bp,967.57bp) and (1072.5bp,950.89bp)  .. (956.0bp,901.0bp) .. controls (950.92bp,898.82bp) and (605.87bp,721.73bp)  .. (603.0bp,717.0bp) .. controls (598.39bp,709.4bp) and (598.14bp,704.44bp)  .. (603.0bp,697.0bp) .. controls (613.88bp,680.34bp) and (633.12bp,695.66bp)  .. (644.0bp,679.0bp) .. controls (652.75bp,665.6bp) and (650.97bp,657.4bp)  .. (644.0bp,643.0bp) .. controls (632.15bp,618.51bp) and (620.39bp,617.05bp)  .. (596.0bp,605.0bp) .. controls (566.82bp,590.58bp) and (544.99bp,612.69bp)  .. (525.0bp,587.0bp) .. controls (515.17bp,574.37bp) and (523.17bp,566.89bp)  .. (525.0bp,551.0bp) .. controls (546.89bp,361.1bp) and (497.91bp,234.18bp)  .. (667.0bp,145.0bp) .. controls (711.75bp,121.4bp) and (1481.1bp,111.41bp)  .. (1671.0bp,109.28bp);
+  \draw (555.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 32 -> 51
+  \draw [->] (2616.4bp,390.83bp) .. controls (2571.9bp,400.96bp) and (2484.8bp,420.8bp)  .. (2484.0bp,421.0bp) .. controls (2417.1bp,437.08bp) and (2399.1bp,436.94bp)  .. (2334.0bp,459.0bp) .. controls (2295.5bp,472.03bp) and (2288.8bp,482.89bp)  .. (2250.0bp,495.0bp) .. controls (2209.5bp,507.64bp) and (2104.7bp,525.11bp)  .. (2063.0bp,533.0bp) .. controls (2004.0bp,544.16bp) and (1935.3bp,555.99bp)  .. (1884.3bp,564.62bp);
+  \draw (2362.5bp,477.0bp) node {epsilon:o:1};
+  % Edge: 01 -> 22
+  \draw [->] (2970.7bp,1023.4bp) .. controls (3018.1bp,1012.7bp) and (3122.1bp,987.53bp)  .. (3206.0bp,955.0bp) .. controls (3239.4bp,942.06bp) and (3243.7bp,929.32bp)  .. (3278.0bp,919.0bp) .. controls (3341.0bp,900.01bp) and (3363.2bp,923.67bp)  .. (3425.0bp,901.0bp) .. controls (3427.2bp,900.2bp) and (3703.9bp,719.05bp)  .. (3705.0bp,717.0bp) .. controls (3779.3bp,579.29bp) and (3703.3bp,519.21bp)  .. (3667.0bp,367.0bp) .. controls (3662.8bp,349.49bp) and (3667.6bp,339.56bp)  .. (3653.0bp,329.0bp) .. controls (3613.8bp,300.62bp) and (2877.7bp,294.31bp)  .. (2692.3bp,293.14bp);
+  \draw (3748.0bp,661.0bp) node {a:a:0};
+  % Edge: 40 -> 52
+  \draw [->] (2054.0bp,934.76bp) .. controls (2004.0bp,930.24bp) and (1899.3bp,918.91bp)  .. (1868.0bp,901.0bp) .. controls (1746.9bp,831.82bp) and (1687.8bp,721.79bp)  .. (1764.0bp,605.0bp) .. controls (1783.2bp,575.5bp) and (1789.9bp,565.5bp)  .. (1822.0bp,551.0bp) .. controls (1858.8bp,534.36bp) and (1962.8bp,537.17bp)  .. (2003.0bp,533.0bp) .. controls (2085.3bp,524.46bp) and (2105.6bp,520.27bp)  .. (2188.0bp,513.0bp) .. controls (2304.7bp,502.7bp) and (2337.4bp,523.49bp)  .. (2451.0bp,495.0bp) .. controls (2454.0bp,494.25bp) and (2457.1bp,493.28bp)  .. (2469.5bp,488.35bp);
+  \draw (1746.0bp,707.0bp) node {*:o:1};
+  % Edge: 51 -> 30
+  \draw [->] (1884.8bp,572.51bp) .. controls (1904.6bp,576.65bp) and (1930.2bp,585.63bp)  .. (1943.0bp,605.0bp) .. controls (1950.1bp,615.7bp) and (1944.5bp,628.24bp)  .. (1929.8bp,646.3bp);
+  \draw (1962.5bp,615.0bp) node {n:n:0};
+  % Edge: 22 -> 20
+  \draw [->] (2669.5bp,275.24bp) .. controls (2674.3bp,251.9bp) and (2678.8bp,210.65bp)  .. (2660.0bp,183.0bp) .. controls (2636.7bp,148.8bp) and (2615.3bp,154.37bp)  .. (2575.0bp,145.0bp) .. controls (2468.4bp,120.22bp) and (2192.3bp,131.55bp)  .. (2083.0bp,127.0bp) .. controls (1955.4bp,121.69bp) and (1804.2bp,114.29bp)  .. (1725.1bp,110.36bp);
+  \draw (2702.0bp,201.0bp) node {epsilon:m:1};
+  % Edge: 20 -> 21
+  \draw [->] (1709.4bp,125.46bp) .. controls (1712.9bp,131.35bp) and (1716.2bp,138.22bp)  .. (1718.0bp,145.0bp) .. controls (1720.2bp,153.6bp) and (1720.1bp,156.37bp)  .. (1718.0bp,165.0bp) .. controls (1717.1bp,168.47bp) and (1715.9bp,171.97bp)  .. (1709.9bp,184.47bp);
+  \draw (1736.5bp,155.0bp) node {*:m:1};
+  % Edge: 00 -> 33
+  \draw [->] (748.93bp,1023.8bp) .. controls (721.17bp,1017.9bp) and (676.21bp,1007.2bp)  .. (639.0bp,993.0bp) .. controls (604.08bp,979.7bp) and (595.38bp,975.29bp)  .. (564.0bp,955.0bp) .. controls (329.93bp,803.65bp) and (158.0bp,755.73bp)  .. (158.0bp,477.0bp) .. controls (158.0bp,477.0bp) and (158.0bp,477.0bp)  .. (158.0bp,109.0bp) .. controls (158.0bp,-51.978bp) and (355.6bp,67.594bp)  .. (516.0bp,54.0bp) .. controls (735.63bp,35.387bp) and (2372.0bp,20.626bp)  .. (2650.7bp,18.229bp);
+  \draw (177.0bp,523.0bp) node {*:a:1};
+  % Edge: 51 -> 51
+  \draw [->] (1882.1bp,577.45bp) .. controls (1893.2bp,578.38bp) and (1903.0bp,575.56bp)  .. (1903.0bp,569.0bp) .. controls (1903.0bp,564.59bp) and (1898.6bp,561.88bp)  .. (1882.1bp,560.55bp);
+  \draw (1931.5bp,569.0bp) node {epsilon:o:1};
+  % Edge: 22 -> 32
+  \draw [->] (2667.0bp,311.01bp) .. controls (2667.7bp,322.17bp) and (2667.6bp,336.68bp)  .. (2664.0bp,349.0bp) .. controls (2662.9bp,352.66bp) and (2661.4bp,356.32bp)  .. (2654.5bp,368.66bp);
+  \draw (2695.5bp,339.0bp) node {epsilon:a:1};
+  % Edge: 00 -> 10
+  \draw [->] (801.31bp,1024.8bp) .. controls (838.9bp,1018.7bp) and (910.05bp,1006.5bp)  .. (970.0bp,993.0bp) .. controls (1250.0bp,930.01bp) and (1311.4bp,876.82bp)  .. (1594.0bp,827.0bp) .. controls (1781.2bp,794.0bp) and (1830.4bp,802.52bp)  .. (2020.0bp,789.0bp) .. controls (2169.6bp,778.34bp) and (2208.7bp,793.54bp)  .. (2357.0bp,771.0bp) .. controls (2369.1bp,769.17bp) and (2382.0bp,766.18bp)  .. (2403.3bp,760.53bp);
+  \draw (1376.5bp,891.0bp) node {m:m:0};
+  % Edge: 41 -> 10
+  \draw [->] (2469.4bp,830.86bp) .. controls (2481.1bp,819.61bp) and (2493.0bp,803.43bp)  .. (2485.0bp,789.0bp) .. controls (2479.6bp,779.29bp) and (2470.5bp,771.84bp)  .. (2452.0bp,761.57bp);
+  \draw (2506.5bp,799.0bp) node {m:m:0};
+  % Edge: 12 -> 32
+  \draw [->] (3466.7bp,1025.5bp) .. controls (3504.8bp,1018.9bp) and (3574.3bp,1001.0bp)  .. (3609.0bp,955.0bp) .. controls (3609.7bp,954.08bp) and (3653.9bp,626.15bp)  .. (3654.0bp,625.0bp) .. controls (3654.6bp,616.13bp) and (3659.2bp,612.2bp)  .. (3654.0bp,605.0bp) .. controls (3644.3bp,591.56bp) and (3102.3bp,424.08bp)  .. (3086.0bp,421.0bp) .. controls (3008.3bp,406.31bp) and (2771.6bp,392.13bp)  .. (2669.1bp,386.44bp);
+  \draw (3672.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 02 -> 21
+  \draw [->] (4311.8bp,1026.1bp) .. controls (4357.8bp,1019.4bp) and (4447.0bp,998.45bp)  .. (4447.0bp,937.0bp) .. controls (4447.0bp,937.0bp) and (4447.0bp,937.0bp)  .. (4447.0bp,661.0bp) .. controls (4447.0bp,636.41bp) and (4447.1bp,572.39bp)  .. (4435.0bp,551.0bp) .. controls (4387.7bp,467.66bp) and (4347.9bp,465.47bp)  .. (4263.0bp,421.0bp) .. controls (4218.2bp,397.51bp) and (3881.8bp,289.13bp)  .. (3809.0bp,275.0bp) .. controls (3590.7bp,232.64bp) and (3532.2bp,247.93bp)  .. (3310.0bp,237.0bp) .. controls (3228.9bp,233.01bp) and (1969.7bp,206.64bp)  .. (1726.1bp,201.56bp);
+  \draw (4463.5bp,615.0bp) node {*:m:1};
+  % Edge: 21 -> 10
+  \draw [->] (1701.6bp,218.93bp) .. controls (1708.9bp,262.64bp) and (1733.4bp,375.88bp)  .. (1798.0bp,441.0bp) .. controls (1915.5bp,559.5bp) and (1983.8bp,540.15bp)  .. (2144.0bp,587.0bp) .. controls (2189.4bp,600.29bp) and (2210.8bp,576.99bp)  .. (2249.0bp,605.0bp) .. controls (2278.8bp,626.87bp) and (2257.9bp,656.24bp)  .. (2287.0bp,679.0bp) .. controls (2314.7bp,700.63bp) and (2332.7bp,680.95bp)  .. (2364.0bp,697.0bp) .. controls (2373.0bp,701.61bp) and (2390.6bp,717.26bp)  .. (2412.8bp,738.1bp);
+  \draw (1879.5bp,477.0bp) node {m:m:0};
+  % Edge: 41 -> 40
+  \draw [->] (2425.3bp,849.18bp) .. controls (2371.2bp,857.73bp) and (2252.9bp,876.76bp)  .. (2245.0bp,881.0bp) .. controls (2234.2bp,886.79bp) and (2236.6bp,894.83bp)  .. (2226.0bp,901.0bp) .. controls (2192.5bp,920.49bp) and (2148.7bp,929.5bp)  .. (2107.8bp,934.87bp);
+  \draw (2274.0bp,891.0bp) node {epsilon:n:1};
+  % Edge: 00 -> 40
+  \draw [->] (801.97bp,1027.5bp) .. controls (876.22bp,1023.1bp) and (1089.9bp,1010.1bp)  .. (1267.0bp,993.0bp) .. controls (1341.4bp,985.83bp) and (1359.5bp,979.52bp)  .. (1434.0bp,973.0bp) .. controls (1553.8bp,962.5bp) and (1924.8bp,944.43bp)  .. (2053.9bp,938.28bp);
+  \draw (1463.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 12 -> 40
+  \draw [->] (3413.0bp,1027.6bp) .. controls (3328.9bp,1023.1bp) and (3064.1bp,1008.5bp)  .. (2845.0bp,993.0bp) .. controls (2735.6bp,985.24bp) and (2708.4bp,980.43bp)  .. (2599.0bp,973.0bp) .. controls (2452.5bp,963.05bp) and (2415.5bp,966.0bp)  .. (2269.0bp,955.0bp) .. controls (2216.4bp,951.05bp) and (2155.7bp,944.96bp)  .. (2107.7bp,939.91bp);
+  \draw (2874.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 01 -> 21
+  \draw [->] (2971.6bp,1024.6bp) .. controls (3036.5bp,1013.7bp) and (3207.9bp,984.36bp)  .. (3350.0bp,955.0bp) .. controls (3363.1bp,952.3bp) and (3571.8bp,906.5bp)  .. (3584.0bp,901.0bp) .. controls (3647.8bp,872.11bp) and (3668.1bp,863.6bp)  .. (3712.0bp,809.0bp) .. controls (3846.1bp,642.16bp) and (3842.4bp,458.53bp)  .. (3672.0bp,329.0bp) .. controls (3558.9bp,243.08bp) and (2537.5bp,268.95bp)  .. (2396.0bp,257.0bp) .. controls (2320.6bp,250.64bp) and (2302.3bp,244.02bp)  .. (2227.0bp,237.0bp) .. controls (2043.0bp,219.85bp) and (1822.2bp,207.43bp)  .. (1726.0bp,202.36bp);
+  \draw (3821.5bp,615.0bp) node {*:m:1};
+  % Edge: 41 -> 51
+  \draw [->] (2428.7bp,835.75bp) .. controls (2415.9bp,829.71bp) and (2400.6bp,820.76bp)  .. (2390.0bp,809.0bp) .. controls (2365.9bp,782.22bp) and (2385.8bp,756.65bp)  .. (2357.0bp,735.0bp) .. controls (2310.7bp,700.2bp) and (2279.5bp,743.47bp)  .. (2228.0bp,717.0bp) .. controls (2217.1bp,711.39bp) and (2220.0bp,702.51bp)  .. (2209.0bp,697.0bp) .. controls (2149.8bp,667.23bp) and (2120.9bp,707.23bp)  .. (2061.0bp,679.0bp) .. controls (2017.8bp,658.64bp) and (2024.5bp,628.73bp)  .. (1983.0bp,605.0bp) .. controls (1955.6bp,589.33bp) and (1920.9bp,580.04bp)  .. (1884.8bp,572.91bp);
+  \draw (2256.5bp,707.0bp) node {epsilon:o:1};
+  % Edge: 31 -> 33
+  \draw [->] (1145.8bp,1024.2bp) .. controls (1117.8bp,1018.7bp) and (1072.2bp,1008.2bp)  .. (1035.0bp,993.0bp) .. controls (927.0bp,948.91bp) and (908.26bp,920.91bp)  .. (807.0bp,863.0bp) .. controls (749.62bp,830.19bp) and (740.12bp,811.58bp)  .. (678.0bp,789.0bp) .. controls (635.15bp,773.43bp) and (620.25bp,785.42bp)  .. (577.0bp,771.0bp) .. controls (526.47bp,754.15bp) and (512.25bp,749.44bp)  .. (470.0bp,717.0bp) .. controls (408.58bp,669.84bp) and (381.59bp,659.35bp)  .. (354.0bp,587.0bp) .. controls (272.44bp,373.09bp) and (314.25bp,234.04bp)  .. (493.0bp,91.0bp) .. controls (529.03bp,62.172bp) and (544.7bp,62.751bp)  .. (590.0bp,54.0bp) .. controls (694.62bp,33.791bp) and (2368.2bp,20.338bp)  .. (2650.8bp,18.2bp);
+  \draw (352.0bp,523.0bp) node {*:a:1};
+  % Edge: 51 -> 41
+  \draw [->] (1846.6bp,585.46bp) .. controls (1843.1bp,591.35bp) and (1839.8bp,598.22bp)  .. (1838.0bp,605.0bp) .. controls (1829.7bp,636.94bp) and (1824.6bp,652.3bp)  .. (1844.0bp,679.0bp) .. controls (1868.1bp,712.15bp) and (1890.3bp,701.05bp)  .. (1928.0bp,717.0bp) .. controls (2008.5bp,751.02bp) and (2034.2bp,747.29bp)  .. (2111.0bp,789.0bp) .. controls (2124.4bp,796.3bp) and (2124.7bp,803.62bp)  .. (2139.0bp,809.0bp) .. controls (2214.7bp,837.45bp) and (2239.7bp,817.54bp)  .. (2320.0bp,827.0bp) .. controls (2352.3bp,830.81bp) and (2389.0bp,835.88bp)  .. (2425.5bp,841.1bp);
+  \draw (1944.5bp,707.0bp) node {*:n:1};
+  % Edge: 51 -> 41
+  \draw [->] (1855.5bp,587.31bp) .. controls (1853.3bp,611.63bp) and (1853.4bp,654.4bp)  .. (1877.0bp,679.0bp) .. controls (1903.5bp,706.53bp) and (1927.7bp,678.33bp)  .. (1961.0bp,697.0bp) .. controls (1971.7bp,703.0bp) and (1969.6bp,710.53bp)  .. (1980.0bp,717.0bp) .. controls (2002.9bp,731.24bp) and (2012.8bp,725.4bp)  .. (2038.0bp,735.0bp) .. controls (2112.4bp,763.29bp) and (2124.6bp,786.68bp)  .. (2201.0bp,809.0bp) .. controls (2211.2bp,811.97bp) and (2347.6bp,830.77bp)  .. (2425.1bp,841.35bp);
+  \draw (1996.0bp,707.0bp) node {o:o:0};
+  % Edge: 10 -> 30
+  \draw [->] (2402.9bp,746.28bp) .. controls (2387.5bp,742.4bp) and (2367.2bp,737.75bp)  .. (2349.0bp,735.0bp) .. controls (2296.3bp,727.06bp) and (2158.1bp,739.84bp)  .. (2110.0bp,717.0bp) .. controls (2098.9bp,711.74bp) and (2101.7bp,702.93bp)  .. (2091.0bp,697.0bp) .. controls (2067.1bp,683.8bp) and (1994.2bp,672.0bp)  .. (1939.5bp,664.37bp);
+  \draw (2126.5bp,707.0bp) node {n:n:0};
+  % Edge: 50 -> 40
+  \draw [->] (3841.9bp,1027.4bp) .. controls (3755.2bp,1022.5bp) and (3476.0bp,1006.4bp)  .. (3245.0bp,993.0bp) .. controls (3093.0bp,984.17bp) and (3055.1bp,979.61bp)  .. (2903.0bp,973.0bp) .. controls (2621.4bp,960.77bp) and (2550.4bp,972.44bp)  .. (2269.0bp,955.0bp) .. controls (2216.4bp,951.74bp) and (2155.6bp,945.47bp)  .. (2107.7bp,940.13bp);
+  \draw (3274.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 21 -> 51
+  \draw [->] (1688.2bp,217.53bp) .. controls (1677.6bp,235.39bp) and (1663.0bp,265.04bp)  .. (1663.0bp,293.0bp) .. controls (1663.0bp,477.0bp) and (1663.0bp,477.0bp)  .. (1663.0bp,477.0bp) .. controls (1663.0bp,502.65bp) and (1658.2bp,515.51bp)  .. (1677.0bp,533.0bp) .. controls (1710.7bp,564.39bp) and (1733.9bp,541.88bp)  .. (1779.0bp,551.0bp) .. controls (1793.3bp,553.89bp) and (1808.9bp,557.38bp)  .. (1832.5bp,562.84bp);
+  \draw (1691.5bp,385.0bp) node {epsilon:o:1};
+  % Edge: 50 -> 21
+  \draw [->] (3896.2bp,1028.4bp) .. controls (3958.3bp,1026.5bp) and (4108.8bp,1019.3bp)  .. (4151.0bp,993.0bp) .. controls (4209.8bp,956.4bp) and (4217.0bp,929.34bp)  .. (4237.0bp,863.0bp) .. controls (4241.6bp,847.68bp) and (4240.7bp,842.56bp)  .. (4237.0bp,827.0bp) .. controls (4223.7bp,771.27bp) and (4048.2bp,403.4bp)  .. (4004.0bp,367.0bp) .. controls (3887.7bp,271.34bp) and (3826.4bp,300.05bp)  .. (3678.0bp,275.0bp) .. controls (3397.0bp,227.58bp) and (3322.7bp,249.28bp)  .. (3038.0bp,237.0bp) .. controls (2522.4bp,214.77bp) and (1894.6bp,204.03bp)  .. (1726.4bp,201.41bp);
+  \draw (4166.5bp,615.0bp) node {*:m:1};
+  % Edge: 31 -> 40
+  \draw [->] (1198.8bp,1025.8bp) .. controls (1274.1bp,1016.9bp) and (1494.0bp,991.3bp)  .. (1677.0bp,973.0bp) .. controls (1812.0bp,959.51bp) and (1972.5bp,945.94bp)  .. (2054.0bp,939.2bp);
+  \draw (1706.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 52 -> 20
+  \draw [->] (2469.4bp,466.05bp) .. controls (2463.5bp,463.42bp) and (2457.1bp,460.85bp)  .. (2451.0bp,459.0bp) .. controls (2404.0bp,444.81bp) and (2388.4bp,457.14bp)  .. (2342.0bp,441.0bp) .. controls (2297.8bp,425.63bp) and (2158.0bp,385.75bp)  .. (2158.0bp,339.0bp) .. controls (2158.0bp,339.0bp) and (2158.0bp,339.0bp)  .. (2158.0bp,201.0bp) .. controls (2158.0bp,153.51bp) and (2112.0bp,160.14bp)  .. (2067.0bp,145.0bp) .. controls (2006.2bp,124.55bp) and (1816.4bp,114.12bp)  .. (1725.1bp,110.06bp);
+  \draw (2188.0bp,293.0bp) node {epsilon:m:1};
+  % Edge: 32 -> 21
+  \draw [->] (2616.5bp,378.4bp) .. controls (2601.1bp,374.61bp) and (2581.0bp,370.02bp)  .. (2563.0bp,367.0bp) .. controls (2489.4bp,354.69bp) and (2470.1bp,357.77bp)  .. (2396.0bp,349.0bp) .. controls (2264.7bp,333.47bp) and (2221.9bp,364.48bp)  .. (2101.0bp,311.0bp) .. controls (2077.8bp,300.73bp) and (2037.3bp,247.1bp)  .. (2014.0bp,237.0bp) .. controls (1964.9bp,215.7bp) and (1808.7bp,205.99bp)  .. (1726.3bp,202.09bp);
+  \draw (2118.5bp,293.0bp) node {*:m:1};
+  % Edge: 22 -> 52
+  \draw [->] (2638.2bp,296.33bp) .. controls (2593.8bp,302.17bp) and (2507.3bp,314.94bp)  .. (2480.0bp,329.0bp) .. controls (2458.2bp,340.24bp) and (2451.5bp,345.34bp)  .. (2440.0bp,367.0bp) .. controls (2430.4bp,385.09bp) and (2422.6bp,426.12bp)  .. (2431.0bp,441.0bp) .. controls (2434.4bp,447.08bp) and (2446.9bp,454.97bp)  .. (2468.8bp,466.57bp);
+  \draw (2456.0bp,385.0bp) node {*:o:1};
+  % Edge: 30 -> 22
+  \draw [->] (1937.5bp,653.35bp) .. controls (1952.3bp,647.62bp) and (1970.7bp,638.43bp)  .. (1983.0bp,625.0bp) .. controls (2036.6bp,566.23bp) and (1987.2bp,507.86bp)  .. (2050.0bp,459.0bp) .. controls (2096.7bp,422.63bp) and (2125.7bp,459.27bp)  .. (2182.0bp,441.0bp) .. controls (2282.2bp,408.48bp) and (2290.7bp,361.28bp)  .. (2391.0bp,329.0bp) .. controls (2434.3bp,315.08bp) and (2563.6bp,302.05bp)  .. (2638.0bp,295.3bp);
+  \draw (2066.0bp,477.0bp) node {a:a:0};
+  % Edge: 40 -> 30
+  \draw [->] (2075.2bp,919.31bp) .. controls (2060.3bp,875.13bp) and (2020.0bp,761.61bp)  .. (1991.0bp,735.0bp) .. controls (1973.0bp,718.47bp) and (1957.1bp,733.39bp)  .. (1939.0bp,717.0bp) .. controls (1930.6bp,709.46bp) and (1924.8bp,698.68bp)  .. (1917.3bp,678.88bp);
+  \draw (2048.5bp,799.0bp) node {n:n:0};
+  % Edge: 40 -> 20
+  \draw [->] (2054.7bp,932.6bp) .. controls (2029.5bp,928.52bp) and (1990.2bp,922.55bp)  .. (1956.0bp,919.0bp) .. controls (1893.5bp,912.52bp) and (1733.2bp,922.06bp)  .. (1674.0bp,901.0bp) .. controls (1659.6bp,895.87bp) and (1660.4bp,886.02bp)  .. (1646.0bp,881.0bp) .. controls (1568.5bp,854.05bp) and (1358.0bp,876.6bp)  .. (1277.0bp,863.0bp) .. controls (1192.5bp,848.82bp) and (1172.0bp,839.51bp)  .. (1092.0bp,809.0bp) .. controls (1072.7bp,801.64bp) and (1068.9bp,797.4bp)  .. (1050.0bp,789.0bp) .. controls (973.53bp,755.0bp) and (948.97bp,757.98bp)  .. (876.0bp,717.0bp) .. controls (802.32bp,675.62bp) and (661.7bp,589.22bp)  .. (634.0bp,533.0bp) .. controls (599.29bp,462.55bp) and (637.28bp,246.86bp)  .. (683.0bp,183.0bp) .. controls (699.25bp,160.31bp) and (706.72bp,154.4bp)  .. (733.0bp,145.0bp) .. controls (777.36bp,129.13bp) and (1487.9bp,113.37bp)  .. (1670.6bp,109.56bp);
+  \draw (664.0bp,523.0bp) node {epsilon:m:1};
+  % Edge: 30 -> 32
+  \draw [->] (1939.6bp,657.79bp) .. controls (2000.6bp,650.39bp) and (2149.1bp,632.26bp)  .. (2199.0bp,625.0bp) .. controls (2301.5bp,610.08bp) and (2330.5bp,619.19bp)  .. (2429.0bp,587.0bp) .. controls (2472.1bp,572.92bp) and (2579.0bp,527.11bp)  .. (2611.0bp,495.0bp) .. controls (2629.9bp,475.98bp) and (2630.9bp,466.88bp)  .. (2638.0bp,441.0bp) .. controls (2640.4bp,432.15bp) and (2641.6bp,422.23bp)  .. (2642.5bp,403.21bp);
+  \draw (2615.5bp,523.0bp) node {epsilon:a:1};
+  % Edge: 10 -> 20
+  \draw [->] (2419.7bp,735.62bp) .. controls (2412.9bp,723.27bp) and (2402.4bp,707.15bp)  .. (2389.0bp,697.0bp) .. controls (2369.5bp,682.24bp) and (2357.4bp,692.49bp)  .. (2337.0bp,679.0bp) .. controls (2300.0bp,654.53bp) and (2308.8bp,626.59bp)  .. (2270.0bp,605.0bp) .. controls (2231.3bp,583.45bp) and (2200.3bp,621.02bp)  .. (2172.0bp,587.0bp) .. controls (2150.8bp,561.54bp) and (2158.8bp,537.58bp)  .. (2181.0bp,513.0bp) .. controls (2197.4bp,494.86bp) and (2218.8bp,514.92bp)  .. (2233.0bp,495.0bp) .. controls (2242.3bp,481.97bp) and (2243.8bp,470.76bp)  .. (2233.0bp,459.0bp) .. controls (2199.6bp,422.77bp) and (2047.6bp,475.08bp)  .. (2012.0bp,441.0bp) .. controls (1975.8bp,406.3bp) and (2011.8bp,377.23bp)  .. (1998.0bp,329.0bp) .. controls (1973.2bp,242.39bp) and (1984.6bp,199.66bp)  .. (1913.0bp,145.0bp) .. controls (1885.7bp,124.17bp) and (1789.1bp,114.78bp)  .. (1725.0bp,110.42bp);
+  \draw (2042.0bp,431.0bp) node {epsilon:m:1};
+  % Edge: 52 -> 10
+  \draw [->] (2481.3bp,494.12bp) .. controls (2468.5bp,518.04bp) and (2446.3bp,563.25bp)  .. (2438.0bp,605.0bp) .. controls (2431.6bp,637.26bp) and (2427.0bp,648.36bp)  .. (2439.0bp,679.0bp) .. controls (2442.9bp,688.97bp) and (2451.2bp,687.0bp)  .. (2455.0bp,697.0bp) .. controls (2458.2bp,705.31bp) and (2457.8bp,708.57bp)  .. (2455.0bp,717.0bp) .. controls (2453.5bp,721.37bp) and (2451.3bp,725.64bp)  .. (2442.8bp,737.8bp);
+  \draw (2457.5bp,615.0bp) node {m:m:0};
+  % Edge: 51 -> 21
+  \draw [->] (1832.5bp,562.67bp) .. controls (1817.1bp,558.98bp) and (1797.0bp,554.39bp)  .. (1779.0bp,551.0bp) .. controls (1726.0bp,541.0bp) and (1701.4bp,566.33bp)  .. (1659.0bp,533.0bp) .. controls (1598.1bp,485.13bp) and (1589.6bp,442.7bp)  .. (1606.0bp,367.0bp) .. controls (1619.4bp,304.98bp) and (1629.6bp,289.67bp)  .. (1665.0bp,237.0bp) .. controls (1668.2bp,232.27bp) and (1672.0bp,227.58bp)  .. (1682.9bp,215.8bp);
+  \draw (1623.5bp,385.0bp) node {*:m:1};
+  % Edge: 21 -> 52
+  \draw [->] (1726.0bp,203.03bp) .. controls (1759.1bp,206.39bp) and (1816.2bp,215.1bp)  .. (1860.0bp,237.0bp) .. controls (1928.5bp,271.26bp) and (1930.1bp,302.47bp)  .. (1991.0bp,349.0bp) .. controls (2048.7bp,393.1bp) and (2057.2bp,417.69bp)  .. (2126.0bp,441.0bp) .. controls (2262.6bp,487.3bp) and (2309.7bp,425.48bp)  .. (2450.0bp,459.0bp) .. controls (2453.3bp,459.78bp) and (2456.6bp,460.8bp)  .. (2469.4bp,465.79bp);
+  \draw (2007.0bp,339.0bp) node {*:o:1};
+  % Edge: 31 -> 10
+  \draw [->] (1198.2bp,1024.3bp) .. controls (1269.4bp,1011.4bp) and (1462.9bp,976.68bp)  .. (1492.0bp,973.0bp) .. controls (1593.7bp,960.15bp) and (1623.0bp,981.57bp)  .. (1722.0bp,955.0bp) .. controls (1887.1bp,910.69bp) and (1903.5bp,832.01bp)  .. (2069.0bp,789.0bp) .. controls (2193.1bp,756.73bp) and (2230.3bp,790.84bp)  .. (2357.0bp,771.0bp) .. controls (2369.0bp,769.11bp) and (2382.0bp,766.11bp)  .. (2403.3bp,760.48bp);
+  \draw (1899.5bp,891.0bp) node {m:m:0};
+  % Edge: 30 -> 41
+  \draw [->] (1939.5bp,665.65bp) .. controls (1966.0bp,670.96bp) and (2007.7bp,681.03bp)  .. (2041.0bp,697.0bp) .. controls (2054.8bp,703.61bp) and (2054.8bp,711.43bp)  .. (2069.0bp,717.0bp) .. controls (2128.7bp,740.33bp) and (2153.4bp,709.17bp)  .. (2212.0bp,735.0bp) .. controls (2258.5bp,755.47bp) and (2253.7bp,786.1bp)  .. (2299.0bp,809.0bp) .. controls (2335.9bp,827.63bp) and (2382.6bp,836.82bp)  .. (2425.0bp,842.53bp);
+  \draw (2271.5bp,753.0bp) node {*:n:1};
+  % Edge: 30 -> 41
+  \draw [->] (1939.2bp,665.89bp) .. controls (1976.7bp,673.1bp) and (2043.6bp,686.83bp)  .. (2066.0bp,697.0bp) .. controls (2079.9bp,703.31bp) and (2079.7bp,711.67bp)  .. (2094.0bp,717.0bp) .. controls (2176.4bp,747.62bp) and (2213.8bp,692.96bp)  .. (2291.0bp,735.0bp) .. controls (2327.7bp,754.98bp) and (2315.0bp,784.68bp)  .. (2349.0bp,809.0bp) .. controls (2369.0bp,823.31bp) and (2395.2bp,832.36bp)  .. (2426.0bp,840.2bp);
+  \draw (2337.0bp,753.0bp) node {o:o:0};
+  % Edge: 01 -> 40
+  \draw [->] (2917.8bp,1026.9bp) .. controls (2852.1bp,1021.8bp) and (2680.2bp,1008.1bp)  .. (2537.0bp,993.0bp) .. controls (2380.9bp,976.54bp) and (2195.4bp,952.3bp)  .. (2107.7bp,940.6bp);
+  \draw (2566.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 22 -> 33
+  \draw [->] (2684.0bp,279.99bp) .. controls (2701.2bp,266.89bp) and (2725.6bp,244.93bp)  .. (2736.0bp,219.0bp) .. controls (2760.8bp,157.39bp) and (2720.6bp,81.252bp)  .. (2689.9bp,34.265bp);
+  \draw (2759.0bp,155.0bp) node {*:a:1};
+  % Edge: 10 -> 41
+  \draw [->] (2411.0bp,767.69bp) .. controls (2400.1bp,778.96bp) and (2389.4bp,794.92bp)  .. (2397.0bp,809.0bp) .. controls (2402.0bp,818.26bp) and (2410.5bp,825.52bp)  .. (2428.3bp,835.94bp);
+  \draw (2413.5bp,799.0bp) node {*:n:1};
+  % Edge: 10 -> 41
+  \draw [->] (2432.7bp,771.0bp) .. controls (2436.1bp,784.22bp) and (2440.9bp,802.41bp)  .. (2447.4bp,827.26bp);
+  \draw (2458.0bp,799.0bp) node {o:o:0};
+  % Edge: 31 -> 52
+  \draw [->] (1176.5bp,1011.0bp) .. controls (1179.5bp,999.89bp) and (1183.9bp,985.39bp)  .. (1189.0bp,973.0bp) .. controls (1218.1bp,903.03bp) and (1222.7bp,879.79bp)  .. (1277.0bp,827.0bp) .. controls (1345.1bp,760.88bp) and (1379.3bp,766.86bp)  .. (1460.0bp,717.0bp) .. controls (1551.8bp,660.32bp) and (1574.3bp,645.43bp)  .. (1665.0bp,587.0bp) .. controls (1689.6bp,571.18bp) and (1693.7bp,563.72bp)  .. (1720.0bp,551.0bp) .. controls (1742.8bp,539.98bp) and (1750.8bp,543.19bp)  .. (1774.0bp,533.0bp) .. controls (1790.8bp,525.63bp) and (1792.3bp,517.84bp)  .. (1810.0bp,513.0bp) .. controls (1947.4bp,475.32bp) and (2312.1bp,526.86bp)  .. (2451.0bp,495.0bp) .. controls (2454.2bp,494.27bp) and (2457.4bp,493.27bp)  .. (2470.0bp,488.33bp);
+  \draw (1444.0bp,753.0bp) node {*:o:1};
+  % Edge: 42 -> 41
+  \draw [->] (1729.2bp,1028.9bp) .. controls (1849.4bp,1028.2bp) and (2330.5bp,1023.7bp)  .. (2390.0bp,993.0bp) .. controls (2436.4bp,969.07bp) and (2445.8bp,950.29bp)  .. (2463.0bp,901.0bp) .. controls (2466.2bp,891.72bp) and (2465.3bp,881.23bp)  .. (2460.0bp,862.24bp);
+  \draw (2472.5bp,937.0bp) node {*:n:1};
+  % Edge: 42 -> 41
+  \draw [->] (1729.2bp,1028.3bp) .. controls (1852.1bp,1025.2bp) and (2351.6bp,1011.5bp)  .. (2419.0bp,993.0bp) .. controls (2453.9bp,983.42bp) and (2472.3bp,985.99bp)  .. (2491.0bp,955.0bp) .. controls (2507.5bp,927.61bp) and (2488.8bp,892.18bp)  .. (2465.8bp,860.81bp);
+  \draw (2513.0bp,937.0bp) node {o:o:0};
+  % Edge: 01 -> 51
+  \draw [->] (2926.9bp,1015.4bp) .. controls (2919.7bp,1009.2bp) and (2911.7bp,1001.4bp)  .. (2906.0bp,993.0bp) .. controls (2886.3bp,963.85bp) and (2895.2bp,949.66bp)  .. (2878.0bp,919.0bp) .. controls (2801.9bp,783.43bp) and (2795.0bp,725.26bp)  .. (2663.0bp,643.0bp) .. controls (2569.2bp,584.56bp) and (2279.3bp,593.37bp)  .. (2169.0bp,587.0bp) .. controls (2070.1bp,581.29bp) and (1953.6bp,574.54bp)  .. (1885.0bp,570.57bp);
+  \draw (2847.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 40 -> 21
+  \draw [->] (2054.2bp,934.67bp) .. controls (1999.2bp,929.61bp) and (1875.3bp,916.83bp)  .. (1836.0bp,901.0bp) .. controls (1821.8bp,895.28bp) and (1821.1bp,888.89bp)  .. (1808.0bp,881.0bp) .. controls (1792.7bp,871.77bp) and (1786.8bp,873.07bp)  .. (1772.0bp,863.0bp) .. controls (1752.2bp,849.53bp) and (1754.1bp,836.07bp)  .. (1732.0bp,827.0bp) .. controls (1649.9bp,793.34bp) and (1421.1bp,820.09bp)  .. (1333.0bp,809.0bp) .. controls (1289.8bp,803.56bp) and (1279.7bp,797.59bp)  .. (1237.0bp,789.0bp) .. controls (1216.4bp,784.85bp) and (1157.4bp,787.24bp)  .. (1144.0bp,771.0bp) .. controls (1067.9bp,678.81bp) and (1102.4bp,293.02bp)  .. (1208.0bp,237.0bp) .. controls (1218.0bp,231.69bp) and (1548.6bp,210.46bp)  .. (1671.8bp,202.7bp);
+  \draw (1120.5bp,569.0bp) node {*:m:1};
+  % Edge: 32 -> 41
+  \draw [->] (2666.2bp,393.44bp) .. controls (2680.2bp,399.34bp) and (2697.3bp,408.42bp)  .. (2709.0bp,421.0bp) .. controls (2712.7bp,424.98bp) and (2789.1bp,524.27bp)  .. (2767.0bp,587.0bp) .. controls (2724.8bp,706.52bp) and (2694.3bp,740.02bp)  .. (2588.0bp,809.0bp) .. controls (2558.1bp,828.42bp) and (2518.0bp,837.4bp)  .. (2479.0bp,842.84bp);
+  \draw (2776.5bp,615.0bp) node {*:n:1};
+  % Edge: 32 -> 41
+  \draw [->] (2667.4bp,391.37bp) .. controls (2686.1bp,396.96bp) and (2711.4bp,406.49bp)  .. (2730.0bp,421.0bp) .. controls (2805.3bp,479.66bp) and (2829.0bp,535.09bp)  .. (2797.0bp,625.0bp) .. controls (2758.5bp,733.07bp) and (2722.4bp,766.13bp)  .. (2616.0bp,809.0bp) .. controls (2574.0bp,825.93bp) and (2522.5bp,835.57bp)  .. (2478.7bp,841.93bp);
+  \draw (2819.0bp,615.0bp) node {o:o:0};
+  % Edge: 22 -> 30
+  \draw [->] (2637.8bp,294.62bp) .. controls (2586.5bp,298.13bp) and (2477.5bp,307.9bp)  .. (2447.0bp,329.0bp) .. controls (2383.0bp,373.27bp) and (2450.6bp,444.94bp)  .. (2391.0bp,495.0bp) .. controls (2355.1bp,525.11bp) and (2225.4bp,498.05bp)  .. (2181.0bp,513.0bp) .. controls (2092.8bp,542.71bp) and (2087.0bp,582.8bp)  .. (2004.0bp,625.0bp) .. controls (1985.6bp,634.33bp) and (1964.3bp,642.9bp)  .. (1937.1bp,652.86bp);
+  \draw (2430.5bp,477.0bp) node {n:n:0};
+  % Edge: 02 -> 41
+  \draw [->] (4257.8bp,1026.9bp) .. controls (4193.9bp,1022.0bp) and (4029.2bp,1008.6bp)  .. (3892.0bp,993.0bp) .. controls (3768.1bp,978.86bp) and (3735.0bp,985.07bp)  .. (3614.0bp,955.0bp) .. controls (3521.2bp,931.95bp) and (3505.8bp,899.46bp)  .. (3412.0bp,881.0bp) .. controls (3307.0bp,860.35bp) and (3037.9bp,867.01bp)  .. (2931.0bp,863.0bp) .. controls (2766.3bp,856.82bp) and (2569.6bp,849.43bp)  .. (2479.0bp,846.02bp);
+  \draw (3630.5bp,937.0bp) node {*:n:1};
+  % Edge: 02 -> 41
+  \draw [->] (4258.6bp,1024.3bp) .. controls (4118.2bp,999.03bp) and (3464.2bp,881.55bp)  .. (3459.0bp,881.0bp) .. controls (3225.5bp,856.23bp) and (3165.7bp,871.41bp)  .. (2931.0bp,863.0bp) .. controls (2766.2bp,857.1bp) and (2569.6bp,849.55bp)  .. (2479.0bp,846.05bp);
+  \draw (3876.0bp,937.0bp) node {o:o:0};
+  % Edge: 02 -> 52
+  \draw [->] (4271.7bp,1013.2bp) .. controls (4261.8bp,1001.6bp) and (4247.6bp,985.82bp)  .. (4234.0bp,973.0bp) .. controls (4139.6bp,883.85bp) and (4119.8bp,853.33bp)  .. (4007.0bp,789.0bp) .. controls (3967.1bp,766.22bp) and (3849.2bp,745.41bp)  .. (3813.0bp,717.0bp) .. controls (3781.8bp,692.48bp) and (3794.6bp,667.0bp)  .. (3763.0bp,643.0bp) .. controls (3720.5bp,610.71bp) and (3700.7bp,618.56bp)  .. (3649.0bp,605.0bp) .. controls (3441.4bp,550.51bp) and (3388.0bp,539.15bp)  .. (3175.0bp,513.0bp) .. controls (3048.1bp,497.43bp) and (2652.0bp,482.62bp)  .. (2518.2bp,477.92bp);
+  \draw (3977.0bp,753.0bp) node {*:o:1};
+  % Edge: 01 -> 33
+  \draw [->] (2972.0bp,1027.6bp) .. controls (3046.5bp,1023.7bp) and (3260.7bp,1011.6bp)  .. (3438.0bp,993.0bp) .. controls (3561.6bp,980.02bp) and (3594.6bp,985.72bp)  .. (3715.0bp,955.0bp) .. controls (3847.6bp,921.17bp) and (4167.1bp,789.83bp)  .. (4283.0bp,717.0bp) .. controls (4305.2bp,703.07bp) and (4316.9bp,702.71bp)  .. (4328.0bp,679.0bp) .. controls (4347.0bp,638.33bp) and (4329.0bp,521.89bp)  .. (4329.0bp,477.0bp) .. controls (4329.0bp,477.0bp) and (4329.0bp,477.0bp)  .. (4329.0bp,109.0bp) .. controls (4329.0bp,70.817bp) and (4298.8bp,67.405bp)  .. (4263.0bp,54.0bp) .. controls (4188.3bp,25.983bp) and (2947.8bp,19.183bp)  .. (2705.1bp,18.107bp);
+  \draw (4348.0bp,523.0bp) node {*:a:1};
+  % Edge: 11 -> 22
+  \draw [->] (362.08bp,1026.1bp) .. controls (315.79bp,1019.5bp) and (226.0bp,998.74bp)  .. (226.0bp,937.0bp) .. controls (226.0bp,937.0bp) and (226.0bp,937.0bp)  .. (226.0bp,799.0bp) .. controls (226.0bp,675.44bp) and (622.94bp,626.55bp)  .. (740.0bp,587.0bp) .. controls (1015.0bp,494.09bp) and (1074.2bp,440.47bp)  .. (1355.0bp,367.0bp) .. controls (1401.2bp,354.91bp) and (1415.4bp,363.2bp)  .. (1461.0bp,349.0bp) .. controls (1481.1bp,342.74bp) and (1483.5bp,333.75bp)  .. (1504.0bp,329.0bp) .. controls (1604.0bp,305.85bp) and (2325.4bp,315.89bp)  .. (2428.0bp,311.0bp) .. controls (2498.7bp,307.63bp) and (2581.2bp,300.69bp)  .. (2638.0bp,295.55bp);
+  \draw (525.0bp,661.0bp) node {a:a:0};
+  % Edge: 22 -> 22
+  \draw [->] (2689.1bp,301.45bp) .. controls (2700.2bp,302.38bp) and (2710.0bp,299.56bp)  .. (2710.0bp,293.0bp) .. controls (2710.0bp,288.59bp) and (2705.6bp,285.88bp)  .. (2689.1bp,284.55bp);
+  \draw (2726.0bp,293.0bp) node {a:a:0};
+  % Edge: 41 -> 32
+  \draw [->] (2479.4bp,844.04bp) .. controls (2542.2bp,841.47bp) and (2694.4bp,832.87bp)  .. (2739.0bp,809.0bp) .. controls (2777.3bp,788.49bp) and (2765.6bp,757.1bp)  .. (2803.0bp,735.0bp) .. controls (2836.3bp,715.37bp) and (2855.8bp,738.35bp)  .. (2888.0bp,717.0bp) .. controls (2968.4bp,663.68bp) and (2978.9bp,626.36bp)  .. (3003.0bp,533.0bp) .. controls (3017.1bp,478.53bp) and (2991.7bp,450.87bp)  .. (2944.0bp,421.0bp) .. controls (2900.7bp,393.87bp) and (2750.2bp,387.19bp)  .. (2669.1bp,385.32bp);
+  \draw (3010.5bp,615.0bp) node {epsilon:a:1};
+  % Edge: 00 -> 52
+  \draw [->] (786.25bp,1012.4bp) .. controls (812.82bp,974.3bp) and (883.32bp,880.0bp)  .. (964.0bp,827.0bp) .. controls (1065.4bp,760.39bp) and (1103.8bp,766.3bp)  .. (1221.0bp,735.0bp) .. controls (1264.6bp,723.35bp) and (1278.0bp,730.94bp)  .. (1321.0bp,717.0bp) .. controls (1482.5bp,664.59bp) and (1504.4bp,606.06bp)  .. (1665.0bp,551.0bp) .. controls (1701.1bp,538.62bp) and (1714.1bp,548.42bp)  .. (1749.0bp,533.0bp) .. controls (1763.0bp,526.82bp) and (1762.5bp,517.86bp)  .. (1777.0bp,513.0bp) .. controls (1848.0bp,489.19bp) and (2378.0bp,511.7bp)  .. (2451.0bp,495.0bp) .. controls (2454.2bp,494.27bp) and (2457.4bp,493.28bp)  .. (2470.0bp,488.34bp);
+  \draw (1237.0bp,753.0bp) node {*:o:1};
+  % Edge: 12 -> 20
+  \draw [->] (3467.1bp,1027.6bp) .. controls (3536.9bp,1023.9bp) and (3721.2bp,1012.5bp)  .. (3779.0bp,993.0bp) .. controls (3988.7bp,922.28bp) and (4006.9bp,833.77bp)  .. (4205.0bp,735.0bp) .. controls (4224.3bp,725.39bp) and (4237.9bp,734.84bp)  .. (4250.0bp,717.0bp) .. controls (4255.0bp,709.64bp) and (4252.1bp,705.64bp)  .. (4250.0bp,697.0bp) .. controls (4229.7bp,612.55bp) and (4161.0bp,609.86bp)  .. (4161.0bp,523.0bp) .. controls (4161.0bp,523.0bp) and (4161.0bp,523.0bp)  .. (4161.0bp,339.0bp) .. controls (4161.0bp,184.21bp) and (3978.4bp,273.44bp)  .. (3828.0bp,237.0bp) .. controls (3603.7bp,182.67bp) and (3546.7bp,167.23bp)  .. (3317.0bp,145.0bp) .. controls (3048.4bp,119.01bp) and (2372.7bp,134.99bp)  .. (2103.0bp,127.0bp) .. controls (1967.5bp,122.99bp) and (1806.6bp,114.82bp)  .. (1725.0bp,110.48bp);
+  \draw (4208.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 40 -> 33
+  \draw [->] (2054.8bp,932.32bp) .. controls (2029.5bp,928.03bp) and (1990.3bp,921.92bp)  .. (1956.0bp,919.0bp) .. controls (1661.8bp,893.92bp) and (1585.8bp,929.98bp)  .. (1292.0bp,901.0bp) .. controls (1192.4bp,891.17bp) and (1166.9bp,888.05bp)  .. (1070.0bp,863.0bp) .. controls (1023.0bp,850.87bp) and (1013.0bp,842.3bp)  .. (967.0bp,827.0bp) .. controls (759.59bp,758.04bp) and (677.44bp,803.81bp)  .. (498.0bp,679.0bp) .. controls (473.04bp,661.64bp) and (466.95bp,653.36bp)  .. (456.0bp,625.0bp) .. controls (424.86bp,544.36bp) and (395.62bp,317.15bp)  .. (428.0bp,237.0bp) .. controls (479.45bp,109.66bp) and (541.73bp,77.78bp)  .. (677.0bp,54.0bp) .. controls (777.36bp,36.356bp) and (2374.5bp,20.815bp)  .. (2650.9bp,18.247bp);
+  \draw (442.0bp,477.0bp) node {*:a:1};
+  % Edge: 10 -> 22
+  \draw [->] (2455.1bp,752.01bp) .. controls (2495.3bp,749.72bp) and (2572.1bp,742.13bp)  .. (2632.0bp,717.0bp) .. controls (2646.1bp,711.08bp) and (2646.4bp,704.02bp)  .. (2660.0bp,697.0bp) .. controls (2792.5bp,628.52bp) and (2856.8bp,675.33bp)  .. (2977.0bp,587.0bp) .. controls (3042.0bp,539.19bp) and (3059.7bp,517.65bp)  .. (3085.0bp,441.0bp) .. controls (3100.6bp,393.72bp) and (3118.7bp,365.67bp)  .. (3085.0bp,329.0bp) .. controls (3059.4bp,301.07bp) and (2800.1bp,294.77bp)  .. (2692.1bp,293.25bp);
+  \draw (3069.0bp,523.0bp) node {a:a:0};
+  % Edge: 30 -> 10
+  \draw [->] (1939.5bp,664.67bp) .. controls (1998.7bp,672.94bp) and (2137.6bp,692.66bp)  .. (2147.0bp,697.0bp) .. controls (2159.3bp,702.7bp) and (2157.6bp,711.63bp)  .. (2170.0bp,717.0bp) .. controls (2243.4bp,748.72bp) and (2270.1bp,722.09bp)  .. (2349.0bp,735.0bp) .. controls (2363.4bp,737.35bp) and (2379.1bp,740.75bp)  .. (2402.5bp,746.36bp);
+  \draw (2189.5bp,707.0bp) node {m:m:0};
+  % Edge: 21 -> 32
+  \draw [->] (1726.0bp,202.87bp) .. controls (1796.1bp,207.87bp) and (1982.1bp,222.17bp)  .. (2042.0bp,237.0bp) .. controls (2065.2bp,242.75bp) and (2068.7bp,251.41bp)  .. (2092.0bp,257.0bp) .. controls (2177.9bp,277.62bp) and (2204.7bp,251.91bp)  .. (2290.0bp,275.0bp) .. controls (2364.8bp,295.26bp) and (2373.8bp,326.33bp)  .. (2448.0bp,349.0bp) .. controls (2497.5bp,364.12bp) and (2512.2bp,357.25bp)  .. (2563.0bp,367.0bp) .. controls (2577.3bp,369.75bp) and (2593.0bp,373.22bp)  .. (2616.5bp,378.72bp);
+  \draw (2395.5bp,293.0bp) node {epsilon:a:1};
+  % Edge: 21 -> 20
+  \draw [->] (1677.4bp,189.55bp) .. controls (1668.4bp,183.54bp) and (1658.9bp,175.28bp)  .. (1654.0bp,165.0bp) .. controls (1650.1bp,156.99bp) and (1650.2bp,153.03bp)  .. (1654.0bp,145.0bp) .. controls (1657.3bp,138.01bp) and (1662.7bp,131.93bp)  .. (1676.9bp,120.56bp);
+  \draw (1684.0bp,155.0bp) node {epsilon:m:1};
+  % Edge: 20 -> 33
+  \draw [->] (1724.2bp,104.16bp) .. controls (1783.5bp,93.363bp) and (1932.9bp,67.244bp)  .. (2059.0bp,54.0bp) .. controls (2278.8bp,30.916bp) and (2544.2bp,21.704bp)  .. (2650.8bp,18.679bp);
+  \draw (2075.0bp,63.5bp) node {*:a:1};
+  % Edge: 51 -> 40
+  \draw [->] (1842.4bp,584.15bp) .. controls (1837.2bp,590.13bp) and (1832.0bp,597.39bp)  .. (1829.0bp,605.0bp) .. controls (1816.8bp,635.59bp) and (1817.2bp,647.3bp)  .. (1826.0bp,679.0bp) .. controls (1831.3bp,698.02bp) and (1836.6bp,701.63bp)  .. (1849.0bp,717.0bp) .. controls (1915.1bp,799.0bp) and (2010.6bp,880.27bp)  .. (2063.5bp,923.18bp);
+  \draw (1923.0bp,753.0bp) node {epsilon:n:1};
+  % Edge: 42 -> 21
+  \draw [->] (1674.9bp,1028.7bp) .. controls (1591.4bp,1027.3bp) and (1339.3bp,1021.0bp)  .. (1263.0bp,993.0bp) .. controls (1235.8bp,983.01bp) and (1232.4bp,973.45bp)  .. (1210.0bp,955.0bp) .. controls (1192.1bp,940.19bp) and (1192.0bp,930.93bp)  .. (1172.0bp,919.0bp) .. controls (1103.7bp,878.22bp) and (1075.7bp,892.84bp)  .. (1002.0bp,863.0bp) .. controls (958.52bp,845.4bp) and (836.92bp,810.75bp)  .. (812.0bp,771.0bp) .. controls (775.22bp,712.32bp) and (854.83bp,664.21bp)  .. (894.0bp,605.0bp) .. controls (954.26bp,513.9bp) and (975.78bp,495.42bp)  .. (1034.0bp,403.0bp) .. controls (1068.9bp,347.59bp) and (1067.6bp,327.33bp)  .. (1107.0bp,275.0bp) .. controls (1121.2bp,256.17bp) and (1122.6bp,246.86bp)  .. (1144.0bp,237.0bp) .. controls (1147.0bp,235.64bp) and (1538.1bp,211.07bp)  .. (1672.0bp,202.69bp);
+  \draw (911.5bp,615.0bp) node {*:m:1};
+  % Edge: 42 -> 30
+  \draw [->] (1721.8bp,1016.7bp) .. controls (1772.2bp,984.19bp) and (1904.7bp,889.98bp)  .. (1953.0bp,771.0bp) .. controls (1959.0bp,756.18bp) and (1963.2bp,747.32bp)  .. (1953.0bp,735.0bp) .. controls (1925.6bp,701.91bp) and (1885.4bp,750.09bp)  .. (1858.0bp,717.0bp) .. controls (1845.9bp,702.39bp) and (1863.2bp,687.11bp)  .. (1890.5bp,671.23bp);
+  \draw (1938.5bp,845.0bp) node {n:n:0};
+  % Edge: 50 -> 51
+  \draw [->] (3856.1bp,1012.7bp) .. controls (3833.7bp,984.54bp) and (3785.3bp,925.65bp)  .. (3739.0bp,881.0bp) .. controls (3733.2bp,875.39bp) and (3520.5bp,701.73bp)  .. (3514.0bp,697.0bp) .. controls (3477.7bp,670.79bp) and (3471.3bp,657.59bp)  .. (3429.0bp,643.0bp) .. controls (3218.1bp,570.29bp) and (2387.5bp,595.57bp)  .. (2169.0bp,587.0bp) .. controls (2070.0bp,583.12bp) and (1953.5bp,575.58bp)  .. (1885.0bp,570.9bp);
+  \draw (3679.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 12 -> 51
+  \draw [->] (3436.2bp,1011.2bp) .. controls (3430.0bp,986.99bp) and (3415.8bp,943.97bp)  .. (3388.0bp,919.0bp) .. controls (3369.8bp,902.67bp) and (3356.5bp,914.26bp)  .. (3336.0bp,901.0bp) .. controls (3225.1bp,829.38bp) and (3240.3bp,751.43bp)  .. (3120.0bp,697.0bp) .. controls (3052.0bp,666.24bp) and (2870.8bp,616.38bp)  .. (2797.0bp,605.0bp) .. controls (2659.0bp,583.71bp) and (2308.5bp,593.03bp)  .. (2169.0bp,587.0bp) .. controls (2070.1bp,582.72bp) and (1953.6bp,575.35bp)  .. (1885.0bp,570.83bp);
+  \draw (3271.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 20 -> 22
+  \draw [->] (1725.1bp,110.34bp) .. controls (1787.9bp,113.43bp) and (1948.6bp,121.25bp)  .. (2083.0bp,127.0bp) .. controls (2134.5bp,129.2bp) and (2501.0bp,121.71bp)  .. (2547.0bp,145.0bp) .. controls (2598.7bp,171.16bp) and (2635.2bp,231.55bp)  .. (2657.4bp,275.72bp);
+  \draw (2640.0bp,201.0bp) node {a:a:0};
+  % Edge: 00 -> 32
+  \draw [->] (767.23bp,1011.4bp) .. controls (759.89bp,993.17bp) and (750.0bp,963.65bp)  .. (750.0bp,937.0bp) .. controls (750.0bp,937.0bp) and (750.0bp,937.0bp)  .. (750.0bp,799.0bp) .. controls (750.0bp,746.23bp) and (802.25bp,757.45bp)  .. (850.0bp,735.0bp) .. controls (996.54bp,666.11bp) and (1385.5bp,546.32bp)  .. (1544.0bp,513.0bp) .. controls (1618.8bp,497.28bp) and (1645.6bp,526.97bp)  .. (1715.0bp,495.0bp) .. controls (1736.1bp,485.27bp) and (1731.8bp,468.52bp)  .. (1753.0bp,459.0bp) .. controls (1839.3bp,420.31bp) and (1876.0bp,472.91bp)  .. (1965.0bp,441.0bp) .. controls (1979.7bp,435.72bp) and (1979.1bp,425.89bp)  .. (1994.0bp,421.0bp) .. controls (2054.1bp,401.24bp) and (2500.3bp,411.06bp)  .. (2563.0bp,403.0bp) .. controls (2577.6bp,401.13bp) and (2593.4bp,397.79bp)  .. (2617.0bp,392.0bp);
+  \draw (967.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 32 -> 52
+  \draw [->] (2620.8bp,396.26bp) .. controls (2608.8bp,402.94bp) and (2593.7bp,411.87bp)  .. (2581.0bp,421.0bp) .. controls (2570.0bp,428.92bp) and (2569.1bp,433.3bp)  .. (2558.0bp,441.0bp) .. controls (2546.8bp,448.76bp) and (2533.7bp,456.12bp)  .. (2513.1bp,466.66bp);
+  \draw (2597.0bp,431.0bp) node {*:o:1};
+  % Edge: 51 -> 32
+  \draw [->] (1882.9bp,561.89bp) .. controls (1907.3bp,554.86bp) and (1945.3bp,543.64bp)  .. (1978.0bp,533.0bp) .. controls (2026.4bp,517.24bp) and (2041.4bp,519.45bp)  .. (2086.0bp,495.0bp) .. controls (2108.8bp,482.53bp) and (2108.0bp,468.92bp)  .. (2132.0bp,459.0bp) .. controls (2193.6bp,433.51bp) and (2215.0bp,450.97bp)  .. (2281.0bp,441.0bp) .. controls (2330.1bp,433.57bp) and (2341.8bp,428.04bp)  .. (2391.0bp,421.0bp) .. controls (2467.1bp,410.12bp) and (2487.2bp,415.56bp)  .. (2563.0bp,403.0bp) .. controls (2577.4bp,400.62bp) and (2593.1bp,397.22bp)  .. (2616.5bp,391.62bp);
+  \draw (2160.5bp,477.0bp) node {epsilon:a:1};
+  % Edge: 40 -> 40
+  \draw [->] (2105.1bp,945.45bp) .. controls (2116.2bp,946.38bp) and (2126.0bp,943.56bp)  .. (2126.0bp,937.0bp) .. controls (2126.0bp,932.59bp) and (2121.6bp,929.88bp)  .. (2105.1bp,928.55bp);
+  \draw (2155.0bp,937.0bp) node {epsilon:n:1};
+  % Edge: 10 -> 40
+  \draw [->] (2402.4bp,759.25bp) .. controls (2335.4bp,775.66bp) and (2159.4bp,819.28bp)  .. (2149.0bp,827.0bp) .. controls (2120.7bp,848.02bp) and (2101.5bp,884.68bp)  .. (2087.2bp,919.22bp);
+  \draw (2178.0bp,845.0bp) node {epsilon:n:1};
+  % Edge: 12 -> 33
+  \draw [->] (3467.1bp,1027.4bp) .. controls (3542.2bp,1022.8bp) and (3751.9bp,1008.9bp)  .. (3819.0bp,993.0bp) .. controls (3983.2bp,954.16bp) and (4403.4bp,773.74bp)  .. (4483.0bp,625.0bp) .. controls (4487.2bp,617.16bp) and (4484.0bp,613.84bp)  .. (4483.0bp,605.0bp) .. controls (4476.7bp,547.1bp) and (4455.0bp,535.23bp)  .. (4455.0bp,477.0bp) .. controls (4455.0bp,477.0bp) and (4455.0bp,477.0bp)  .. (4455.0bp,109.0bp) .. controls (4455.0bp,35.903bp) and (4371.9bp,67.201bp)  .. (4300.0bp,54.0bp) .. controls (4139.6bp,24.552bp) and (2942.1bp,18.923bp)  .. (2705.0bp,18.082bp);
+  \draw (4479.0bp,523.0bp) node {*:a:1};
+  % Edge: 02 -> 22
+  \draw [->] (4297.2bp,1012.9bp) .. controls (4301.2bp,1006.9bp) and (4305.3bp,999.9bp)  .. (4308.0bp,993.0bp) .. controls (4314.3bp,977.02bp) and (4313.0bp,972.05bp)  .. (4315.0bp,955.0bp) .. controls (4331.5bp,816.4bp) and (4329.0bp,773.31bp)  .. (4279.0bp,643.0bp) .. controls (4262.0bp,598.74bp) and (4260.1bp,582.85bp)  .. (4225.0bp,551.0bp) .. controls (4138.7bp,472.73bp) and (4091.0bp,493.48bp)  .. (3987.0bp,441.0bp) .. controls (3925.9bp,410.18bp) and (3913.9bp,396.09bp)  .. (3852.0bp,367.0bp) .. controls (3810.5bp,347.49bp) and (3800.9bp,338.34bp)  .. (3756.0bp,329.0bp) .. controls (3651.2bp,307.22bp) and (2881.9bp,295.85bp)  .. (2692.1bp,293.34bp);
+  \draw (4308.0bp,661.0bp) node {a:a:0};
+  % Edge: 02 -> 30
+  \draw [->] (4263.5bp,1017.9bp) .. controls (4189.2bp,979.95bp) and (3935.4bp,854.14bp)  .. (3712.0bp,789.0bp) .. controls (3576.5bp,749.48bp) and (3538.5bp,756.53bp)  .. (3399.0bp,735.0bp) .. controls (3275.3bp,715.91bp) and (3244.8bp,706.52bp)  .. (3120.0bp,697.0bp) .. controls (2650.6bp,661.17bp) and (2530.6bp,711.46bp)  .. (2061.0bp,679.0bp) .. controls (2022.8bp,676.36bp) and (1979.3bp,670.75bp)  .. (1939.4bp,665.05bp);
+  \draw (3936.5bp,845.0bp) node {n:n:0};
+  % Edge: 02 -> 40
+  \draw [->] (4258.1bp,1027.1bp) .. controls (4143.1bp,1018.9bp) and (3682.3bp,987.11bp)  .. (3303.0bp,973.0bp) .. controls (2843.7bp,955.91bp) and (2727.9bp,980.92bp)  .. (2269.0bp,955.0bp) .. controls (2216.3bp,952.03bp) and (2155.6bp,945.68bp)  .. (2107.7bp,940.22bp);
+  \draw (3736.0bp,983.0bp) node {epsilon:n:1};
+  % Edge: 00 -> 41
+  \draw [->] (801.65bp,1025.6bp) .. controls (872.68bp,1016.5bp) and (1072.4bp,991.2bp)  .. (1239.0bp,973.0bp) .. controls (1320.7bp,964.08bp) and (1341.6bp,966.36bp)  .. (1423.0bp,955.0bp) .. controls (1511.6bp,942.64bp) and (1532.4bp,931.23bp)  .. (1621.0bp,919.0bp) .. controls (1705.0bp,907.4bp) and (1726.7bp,910.72bp)  .. (1811.0bp,901.0bp) .. controls (1876.5bp,893.44bp) and (1892.3bp,887.09bp)  .. (1958.0bp,881.0bp) .. controls (2118.4bp,866.13bp) and (2159.6bp,877.9bp)  .. (2320.0bp,863.0bp) .. controls (2352.4bp,859.99bp) and (2389.1bp,854.84bp)  .. (2425.5bp,849.29bp);
+  \draw (1637.5bp,937.0bp) node {*:n:1};
+  % Edge: 00 -> 41
+  \draw [->] (802.21bp,1027.5bp) .. controls (866.12bp,1023.7bp) and (1030.7bp,1012.8bp)  .. (1167.0bp,993.0bp) .. controls (1211.9bp,986.47bp) and (1222.0bp,978.51bp)  .. (1267.0bp,973.0bp) .. controls (1437.9bp,952.06bp) and (1482.6bp,971.31bp)  .. (1654.0bp,955.0bp) .. controls (1883.3bp,933.18bp) and (1938.6bp,910.9bp)  .. (2167.0bp,881.0bp) .. controls (2234.9bp,872.11bp) and (2252.1bp,871.63bp)  .. (2320.0bp,863.0bp) .. controls (2352.3bp,858.9bp) and (2389.0bp,853.86bp)  .. (2425.5bp,848.76bp);
+  \draw (1936.0bp,937.0bp) node {o:o:0};
+  % Edge: 01 -> 20
+  \draw [->] (2969.4bp,1020.9bp) .. controls (3045.6bp,995.63bp) and (3274.0bp,919.89bp)  .. (3278.0bp,919.0bp) .. controls (3342.2bp,904.61bp) and (3360.7bp,915.11bp)  .. (3425.0bp,901.0bp) .. controls (3636.5bp,854.6bp) and (3701.0bp,844.42bp)  .. (3876.0bp,717.0bp) .. controls (4020.2bp,611.98bp) and (4121.2bp,436.72bp)  .. (3979.0bp,329.0bp) .. controls (3644.8bp,75.838bp) and (2522.0bp,141.89bp)  .. (2103.0bp,127.0bp) .. controls (1967.5bp,122.19bp) and (1806.6bp,114.43bp)  .. (1725.0bp,110.37bp);
+  \draw (4053.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 41 -> 52
+  \draw [->] (2478.2bp,840.46bp) .. controls (2496.2bp,835.84bp) and (2518.7bp,826.71bp)  .. (2530.0bp,809.0bp) .. controls (2570.0bp,746.53bp) and (2499.3bp,715.88bp)  .. (2513.0bp,643.0bp) .. controls (2522.7bp,591.42bp) and (2546.3bp,584.58bp)  .. (2556.0bp,533.0bp) .. controls (2557.6bp,524.26bp) and (2560.5bp,520.66bp)  .. (2556.0bp,513.0bp) .. controls (2549.2bp,501.51bp) and (2537.3bp,493.43bp)  .. (2516.2bp,483.95bp);
+  \draw (2529.0bp,661.0bp) node {*:o:1};
+  % Edge: 31 -> 32
+  \draw [->] (1145.7bp,1024.3bp) .. controls (1123.4bp,1019.3bp) and (1091.4bp,1009.8bp)  .. (1068.0bp,993.0bp) .. controls (1020.1bp,958.59bp) and (967.15bp,931.82bp)  .. (997.0bp,881.0bp) .. controls (1039.5bp,808.6bp) and (1083.1bp,817.63bp)  .. (1162.0bp,789.0bp) .. controls (1202.4bp,774.35bp) and (1217.9bp,788.88bp)  .. (1257.0bp,771.0bp) .. controls (1428.8bp,692.35bp) and (1416.5bp,575.18bp)  .. (1595.0bp,513.0bp) .. controls (1661.7bp,489.75bp) and (1686.1bp,517.7bp)  .. (1753.0bp,495.0bp) .. controls (1782.5bp,485.01bp) and (1783.3bp,468.33bp)  .. (1813.0bp,459.0bp) .. controls (1923.5bp,424.24bp) and (1964.0bp,480.14bp)  .. (2073.0bp,441.0bp) .. controls (2087.4bp,435.83bp) and (2086.5bp,425.95bp)  .. (2101.0bp,421.0bp) .. controls (2198.2bp,387.75bp) and (2461.1bp,416.47bp)  .. (2563.0bp,403.0bp) .. controls (2577.6bp,401.07bp) and (2593.4bp,397.73bp)  .. (2617.0bp,391.96bp);
+  \draw (1395.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 42 -> 33
+  \draw [->] (1729.4bp,1028.8bp) .. controls (1847.9bp,1027.7bp) and (2316.7bp,1021.5bp)  .. (2461.0bp,993.0bp) .. controls (2486.9bp,987.87bp) and (2491.2bp,978.81bp)  .. (2517.0bp,973.0bp) .. controls (2595.0bp,955.42bp) and (2620.0bp,979.9bp)  .. (2696.0bp,955.0bp) .. controls (2725.9bp,945.2bp) and (2726.8bp,928.04bp)  .. (2757.0bp,919.0bp) .. controls (2834.8bp,895.68bp) and (3041.7bp,913.0bp)  .. (3122.0bp,901.0bp) .. controls (3254.8bp,881.15bp) and (3282.3bp,847.6bp)  .. (3415.0bp,827.0bp) .. controls (3545.7bp,806.72bp) and (3580.4bp,821.75bp)  .. (3712.0bp,809.0bp) .. controls (3743.8bp,805.92bp) and (3967.2bp,782.41bp)  .. (3997.0bp,771.0bp) .. controls (4143.8bp,714.85bp) and (4249.0bp,680.14bp)  .. (4249.0bp,523.0bp) .. controls (4249.0bp,523.0bp) and (4249.0bp,523.0bp)  .. (4249.0bp,109.0bp) .. controls (4249.0bp,29.626bp) and (2954.0bp,19.369bp)  .. (2705.3bp,18.104bp);
+  \draw (4265.0bp,523.0bp) node {*:a:1};
+  % Edge: 42 -> 10
+  \draw [->] (1725.6bp,1019.7bp) .. controls (1743.0bp,1012.7bp) and (1767.2bp,1002.7bp)  .. (1788.0bp,993.0bp) .. controls (1974.4bp,906.4bp) and (2004.2bp,841.03bp)  .. (2203.0bp,789.0bp) .. controls (2269.7bp,771.55bp) and (2289.2bp,783.49bp)  .. (2357.0bp,771.0bp) .. controls (2369.0bp,768.79bp) and (2382.0bp,765.71bp)  .. (2403.2bp,760.14bp);
+  \draw (2004.5bp,891.0bp) node {m:m:0};
+  % Edge: 50 -> 20
+  \draw [->] (3894.4bp,1022.3bp) .. controls (3917.4bp,1015.8bp) and (3952.0bp,1005.3bp)  .. (3981.0bp,993.0bp) .. controls (4060.8bp,959.15bp) and (4082.8bp,951.88bp)  .. (4153.0bp,901.0bp) .. controls (4167.4bp,890.53bp) and (4378.0bp,695.41bp)  .. (4385.0bp,679.0bp) .. controls (4413.7bp,611.91bp) and (4348.8bp,594.77bp)  .. (4310.0bp,533.0bp) .. controls (4274.5bp,476.52bp) and (4267.7bp,461.15bp)  .. (4235.0bp,403.0bp) .. controls (4203.2bp,346.47bp) and (4217.0bp,313.74bp)  .. (4165.0bp,275.0bp) .. controls (4141.0bp,257.09bp) and (3786.5bp,198.9bp)  .. (3687.0bp,183.0bp) .. controls (3566.5bp,163.74bp) and (3536.7bp,154.3bp)  .. (3415.0bp,145.0bp) .. controls (3124.3bp,122.78bp) and (2394.5bp,135.47bp)  .. (2103.0bp,127.0bp) .. controls (1967.5bp,123.06bp) and (1806.6bp,114.86bp)  .. (1725.0bp,110.49bp);
+  \draw (4386.0bp,569.0bp) node {epsilon:m:1};
+  % Edge: 50 -> 52
+  \draw [->] (3863.0bp,1011.3bp) .. controls (3858.9bp,1000.0bp) and (3852.9bp,985.27bp)  .. (3846.0bp,973.0bp) .. controls (3827.5bp,940.12bp) and (3749.3bp,825.96bp)  .. (3709.0bp,789.0bp) .. controls (3630.8bp,717.3bp) and (3395.4bp,585.36bp)  .. (3295.0bp,551.0bp) .. controls (3206.9bp,520.86bp) and (3181.4bp,524.26bp)  .. (3089.0bp,513.0bp) .. controls (2878.0bp,487.29bp) and (2622.8bp,479.68bp)  .. (2518.2bp,477.45bp);
+  \draw (3703.0bp,753.0bp) node {*:o:1};
+  % Edge: 31 -> 21
+  \draw [->] (1145.2bp,1025.9bp) .. controls (1097.1bp,1020.1bp) and (998.57bp,1006.9bp)  .. (967.0bp,993.0bp) .. controls (831.36bp,933.1bp) and (839.34bp,847.29bp)  .. (703.0bp,789.0bp) .. controls (653.82bp,767.97bp) and (632.07bp,794.47bp)  .. (584.0bp,771.0bp) .. controls (563.09bp,760.79bp) and (564.27bp,749.41bp)  .. (546.0bp,735.0bp) .. controls (510.19bp,706.76bp) and (481.74bp,719.1bp)  .. (460.0bp,679.0bp) .. controls (452.37bp,664.93bp) and (450.61bp,655.95bp)  .. (460.0bp,643.0bp) .. controls (475.1bp,622.18bp) and (490.87bp,633.9bp)  .. (515.0bp,625.0bp) .. controls (657.49bp,572.46bp) and (704.63bp,579.22bp)  .. (831.0bp,495.0bp) .. controls (849.83bp,482.45bp) and (848.13bp,471.48bp)  .. (867.0bp,459.0bp) .. controls (922.56bp,422.27bp) and (955.83bp,446.8bp)  .. (1006.0bp,403.0bp) .. controls (1030.7bp,381.46bp) and (1059.5bp,301.3bp)  .. (1079.0bp,275.0bp) .. controls (1092.9bp,256.32bp) and (1093.9bp,246.85bp)  .. (1115.0bp,237.0bp) .. controls (1115.4bp,236.82bp) and (1533.4bp,211.16bp)  .. (1672.0bp,202.65bp);
+  \draw (590.5bp,615.0bp) node {*:m:1};
+  % Edge: 10 -> 52
+  \draw [->] (2437.4bp,735.89bp) .. controls (2442.5bp,724.15bp) and (2446.4bp,708.64bp)  .. (2439.0bp,697.0bp) .. controls (2429.0bp,681.21bp) and (2413.6bp,692.78bp)  .. (2401.0bp,679.0bp) .. controls (2383.7bp,660.13bp) and (2385.5bp,650.19bp)  .. (2381.0bp,625.0bp) .. controls (2374.1bp,586.77bp) and (2390.2bp,522.03bp)  .. (2398.0bp,513.0bp) .. controls (2413.9bp,494.46bp) and (2427.2bp,503.92bp)  .. (2450.0bp,495.0bp) .. controls (2453.0bp,493.81bp) and (2456.2bp,492.52bp)  .. (2468.6bp,487.23bp);
+  \draw (2397.0bp,615.0bp) node {*:o:1};
+  % Edge: 31 -> 41
+  \draw [->] (1199.0bp,1028.3bp) .. controls (1280.4bp,1025.9bp) and (1529.7bp,1016.9bp)  .. (1735.0bp,993.0bp) .. controls (1787.8bp,986.85bp) and (1800.1bp,978.86bp)  .. (1853.0bp,973.0bp) .. controls (2003.4bp,956.33bp) and (2044.0bp,981.63bp)  .. (2193.0bp,955.0bp) .. controls (2232.9bp,947.88bp) and (2330.4bp,918.31bp)  .. (2367.0bp,901.0bp) .. controls (2387.9bp,891.12bp) and (2409.6bp,876.72bp)  .. (2434.3bp,858.8bp);
+  \draw (2334.5bp,937.0bp) node {*:n:1};
+  % Edge: 31 -> 41
+  \draw [->] (1199.2bp,1028.0bp) .. controls (1322.3bp,1023.5bp) and (1828.6bp,1004.7bp)  .. (1987.0bp,993.0bp) .. controls (2150.5bp,980.93bp) and (2208.0bp,1029.7bp)  .. (2354.0bp,955.0bp) .. controls (2391.1bp,936.03bp) and (2420.6bp,896.7bp)  .. (2442.6bp,861.94bp);
+  \draw (2415.0bp,937.0bp) node {o:o:0};
+  % Edge: 32 -> 20
+  \draw [->] (2624.4bp,371.3bp) .. controls (2563.0bp,323.9bp) and (2358.2bp,168.48bp)  .. (2280.0bp,145.0bp) .. controls (2228.1bp,129.4bp) and (1855.3bp,114.69bp)  .. (1725.0bp,109.95bp);
+  \draw (2496.0bp,247.0bp) node {epsilon:m:1};
+  % Edge: 22 -> 51
+  \draw [->] (2638.1bp,294.87bp) .. controls (2569.7bp,299.77bp) and (2390.6bp,313.71bp)  .. (2333.0bp,329.0bp) .. controls (2212.6bp,360.97bp) and (2191.5bp,394.22bp)  .. (2076.0bp,441.0bp) .. controls (2054.9bp,449.55bp) and (2047.6bp,447.39bp)  .. (2028.0bp,459.0bp) .. controls (1984.6bp,484.69bp) and (1984.8bp,506.31bp)  .. (1942.0bp,533.0bp) .. controls (1926.3bp,542.81bp) and (1907.4bp,551.16bp)  .. (1882.1bp,560.9bp);
+  \draw (2149.5bp,431.0bp) node {epsilon:o:1};
+  % Edge: 02 -> 33
+  \draw [->] (4312.0bp,1028.3bp) .. controls (4399.4bp,1025.4bp) and (4669.0bp,1010.5bp)  .. (4669.0bp,937.0bp) .. controls (4669.0bp,937.0bp) and (4669.0bp,937.0bp)  .. (4669.0bp,109.0bp) .. controls (4669.0bp,15.525bp) and (4558.5bp,67.262bp)  .. (4466.0bp,54.0bp) .. controls (4287.2bp,28.377bp) and (2956.4bp,19.592bp)  .. (2705.0bp,18.145bp);
+  \draw (4685.0bp,523.0bp) node {*:a:1};
+  % Edge: 30 -> 51
+  \draw [->] (1900.0bp,644.95bp) .. controls (1895.3bp,638.87bp) and (1890.2bp,631.78bp)  .. (1886.0bp,625.0bp) .. controls (1880.2bp,615.64bp) and (1874.6bp,604.92bp)  .. (1865.7bp,586.34bp);
+  \draw (1914.5bp,615.0bp) node {epsilon:o:1};
+  % Edge: 22 -> 40
+  \draw [->] (2692.3bp,294.09bp) .. controls (2792.0bp,298.18bp) and (3133.7bp,313.2bp)  .. (3180.0bp,329.0bp) .. controls (3340.5bp,383.78bp) and (3403.6bp,525.26bp)  .. (3332.0bp,679.0bp) .. controls (3316.5bp,712.36bp) and (3297.5bp,709.43bp)  .. (3271.0bp,735.0bp) .. controls (3256.6bp,748.86bp) and (3163.2bp,854.85bp)  .. (3145.0bp,863.0bp) .. controls (3107.3bp,879.86bp) and (2815.1bp,877.04bp)  .. (2774.0bp,881.0bp) .. controls (2712.3bp,886.95bp) and (2697.7bp,895.3bp)  .. (2636.0bp,901.0bp) .. controls (2438.0bp,919.28bp) and (2386.8bp,898.62bp)  .. (2189.0bp,919.0bp) .. controls (2164.9bp,921.48bp) and (2138.0bp,925.96bp)  .. (2107.1bp,931.72bp);
+  \draw (3385.0bp,615.0bp) node {epsilon:n:1};
+  % Edge: 30 -> 21
+  \draw [->] (1886.4bp,656.86bp) .. controls (1854.0bp,651.4bp) and (1797.6bp,640.62bp)  .. (1751.0bp,625.0bp) .. controls (1676.0bp,599.83bp) and (1664.3bp,575.45bp)  .. (1589.0bp,551.0bp) .. controls (1550.6bp,538.53bp) and (1534.3bp,554.2bp)  .. (1500.0bp,533.0bp) .. controls (1455.8bp,505.72bp) and (1447.3bp,489.2bp)  .. (1428.0bp,441.0bp) .. controls (1409.4bp,394.64bp) and (1394.6bp,372.58bp)  .. (1419.0bp,329.0bp) .. controls (1468.5bp,240.64bp) and (1598.1bp,212.96bp)  .. (1672.2bp,203.3bp);
+  \draw (1445.5bp,431.0bp) node {*:m:1};
+  % Edge: 10 -> 51
+  \draw [->] (2405.7bp,742.43bp) .. controls (2399.7bp,739.8bp) and (2393.2bp,737.13bp)  .. (2387.0bp,735.0bp) .. controls (2356.6bp,724.51bp) and (2346.1bp,730.57bp)  .. (2317.0bp,717.0bp) .. controls (2303.1bp,710.54bp) and (2303.4bp,702.29bp)  .. (2289.0bp,697.0bp) .. controls (2245.0bp,680.81bp) and (2116.2bp,707.47bp)  .. (2079.0bp,679.0bp) .. controls (2051.2bp,657.72bp) and (2078.7bp,627.61bp)  .. (2052.0bp,605.0bp) .. controls (2046.0bp,599.92bp) and (1948.8bp,583.6bp)  .. (1884.3bp,573.18bp);
+  \draw (2107.5bp,661.0bp) node {epsilon:o:1};
+  % Edge: 11 -> 52
+  \draw [->] (396.51bp,1011.5bp) .. controls (406.71bp,988.9bp) and (426.41bp,948.79bp)  .. (450.0bp,919.0bp) .. controls (522.18bp,827.83bp) and (534.95bp,792.53bp)  .. (636.0bp,735.0bp) .. controls (663.54bp,719.32bp) and (674.41bp,725.3bp)  .. (705.0bp,717.0bp) .. controls (736.64bp,708.42bp) and (744.11bp,704.6bp)  .. (776.0bp,697.0bp) .. controls (984.87bp,647.24bp) and (1619.2bp,526.95bp)  .. (1752.0bp,513.0bp) .. controls (1906.5bp,496.76bp) and (2299.5bp,529.56bp)  .. (2451.0bp,495.0bp) .. controls (2454.2bp,494.27bp) and (2457.4bp,493.28bp)  .. (2470.0bp,488.34bp);
+  \draw (652.0bp,753.0bp) node {*:o:1};
+  % Edge: 10 -> 33
+  \draw [->] (2454.5bp,749.26bp) .. controls (2497.2bp,743.13bp) and (2583.9bp,730.3bp)  .. (2657.0bp,717.0bp) .. controls (2816.4bp,687.96bp) and (2855.2bp,675.28bp)  .. (3014.0bp,643.0bp) .. controls (3185.7bp,608.1bp) and (3666.2bp,547.72bp)  .. (3765.0bp,403.0bp) .. controls (3798.7bp,353.66bp) and (3773.9bp,307.79bp)  .. (3724.0bp,275.0bp) .. controls (3548.9bp,159.98bp) and (2878.9bp,49.41bp)  .. (2704.5bp,22.051bp);
+  \draw (3795.0bp,385.0bp) node {*:a:1};
+  % Edge: 30 -> 33
+  \draw [->] (1885.7bp,660.43bp) .. controls (1792.2bp,658.28bp) and (1476.0bp,649.56bp)  .. (1216.0bp,625.0bp) .. controls (1092.7bp,613.35bp) and (1052.9bp,637.87bp)  .. (940.0bp,587.0bp) .. controls (927.18bp,581.22bp) and (563.16bp,269.1bp)  .. (556.0bp,257.0bp) .. controls (539.16bp,228.53bp) and (541.09bp,215.35bp)  .. (548.0bp,183.0bp) .. controls (559.44bp,129.43bp) and (579.13bp,111.3bp)  .. (630.0bp,91.0bp) .. controls (860.84bp,-1.125bp) and (939.71bp,65.226bp)  .. (1188.0bp,54.0bp) .. controls (1766.3bp,27.855bp) and (2471.7bp,19.914bp)  .. (2650.6bp,18.232bp);
+  \draw (675.0bp,339.0bp) node {*:a:1};
+  % Edge: 22 -> 10
+  \draw [->] (2688.0bp,302.87bp) .. controls (2700.7bp,309.1bp) and (2716.3bp,318.05bp)  .. (2728.0bp,329.0bp) .. controls (2775.8bp,373.92bp) and (2783.2bp,395.07bp)  .. (2798.0bp,459.0bp) .. controls (2811.2bp,516.03bp) and (2803.0bp,540.83bp)  .. (2767.0bp,587.0bp) .. controls (2738.7bp,623.27bp) and (2715.6bp,613.88bp)  .. (2680.0bp,643.0bp) .. controls (2662.7bp,657.13bp) and (2662.8bp,665.58bp)  .. (2645.0bp,679.0bp) .. controls (2616.4bp,700.53bp) and (2607.4bp,704.17bp)  .. (2574.0bp,717.0bp) .. controls (2537.7bp,730.94bp) and (2494.2bp,740.84bp)  .. (2454.2bp,748.59bp);
+  \draw (2822.5bp,523.0bp) node {m:m:0};
+  % Edge: 32 -> 32
+  \draw [->] (2666.1bp,393.45bp) .. controls (2677.2bp,394.38bp) and (2687.0bp,391.56bp)  .. (2687.0bp,385.0bp) .. controls (2687.0bp,380.59bp) and (2682.6bp,377.88bp)  .. (2666.1bp,376.55bp);
+  \draw (2715.5bp,385.0bp) node {epsilon:a:1};
+  % Edge: 11 -> 30
+  \draw [->] (408.91bp,1016.4bp) .. controls (464.99bp,981.54bp) and (629.97bp,882.37bp)  .. (779.0bp,827.0bp) .. controls (838.23bp,805.0bp) and (854.5bp,803.52bp)  .. (916.0bp,789.0bp) .. controls (1037.6bp,760.27bp) and (1068.1bp,751.17bp)  .. (1192.0bp,735.0bp) .. controls (1311.7bp,719.38bp) and (1343.0bp,730.19bp)  .. (1463.0bp,717.0bp) .. controls (1521.1bp,710.61bp) and (1535.1bp,704.71bp)  .. (1593.0bp,697.0bp) .. controls (1695.2bp,683.39bp) and (1816.2bp,670.71bp)  .. (1886.0bp,663.67bp);
+  \draw (795.5bp,845.0bp) node {n:n:0};
+  % Edge: 50 -> 32
+  \draw [->] (3869.9bp,1010.9bp) .. controls (3872.0bp,949.63bp) and (3870.2bp,747.6bp)  .. (3763.0bp,643.0bp) .. controls (3550.5bp,435.64bp) and (3426.1bp,468.26bp)  .. (3133.0bp,421.0bp) .. controls (2965.1bp,393.92bp) and (2761.5bp,387.19bp)  .. (2669.1bp,385.34bp);
+  \draw (3843.5bp,707.0bp) node {epsilon:a:1};
+  % Edge: 31 -> 51
+  \draw [->] (1181.6bp,1011.8bp) .. controls (1195.8bp,987.98bp) and (1224.3bp,944.92bp)  .. (1259.0bp,919.0bp) .. controls (1276.3bp,906.12bp) and (1285.4bp,911.78bp)  .. (1304.0bp,901.0bp) .. controls (1373.6bp,860.77bp) and (1380.5bp,835.64bp)  .. (1446.0bp,789.0bp) .. controls (1569.4bp,701.09bp) and (1595.0bp,667.51bp)  .. (1733.0bp,605.0bp) .. controls (1761.7bp,591.98bp) and (1796.4bp,582.45bp)  .. (1831.8bp,574.21bp);
+  \draw (1474.5bp,799.0bp) node {epsilon:o:1};
+  % Edge: 52 -> 52
+  \draw [->] (2515.1bp,485.45bp) .. controls (2526.2bp,486.38bp) and (2536.0bp,483.56bp)  .. (2536.0bp,477.0bp) .. controls (2536.0bp,472.59bp) and (2531.6bp,469.88bp)  .. (2515.1bp,468.55bp);
+  \draw (2552.0bp,477.0bp) node {*:o:1};
+  % Edge: 51 -> 33
+  \draw [->] (1831.1bp,566.73bp) .. controls (1777.4bp,562.0bp) and (1653.3bp,550.11bp)  .. (1550.0bp,533.0bp) .. controls (1279.1bp,488.12bp) and (1199.3bp,509.12bp)  .. (946.0bp,403.0bp) .. controls (763.78bp,326.65bp) and (449.15bp,289.39bp)  .. (584.0bp,145.0bp) .. controls (657.1bp,66.734bp) and (2363.9bp,25.071bp)  .. (2650.6bp,18.595bp);
+  \draw (690.0bp,293.0bp) node {*:a:1};
+  % Node: 11
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (389.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (389.0bp,1029.0bp) node {1;1};
+\end{scope}
+  % Node: 10
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2428.0bp,753.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2428.0bp,753.0bp) node {1;0};
+\end{scope}
+  % Node: 00
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (775.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (775.0bp,1029.0bp) node {0;0};
+\end{scope}
+  % Node: 12
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (3440.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (3440.0bp,1029.0bp) node {1;2};
+\end{scope}
+  % Node: 20
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1698.0bp,109.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1698.0bp,109.0bp) node {2;0};
+\end{scope}
+  % Node: 21
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1699.0bp,201.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1699.0bp,201.0bp) node {2;1};
+\end{scope}
+  % Node: 22
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2665.0bp,293.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2665.0bp,293.0bp) node {2;2};
+\end{scope}
+  % Node: 33
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2678.0bp,18.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2678.0bp,18.0bp) node {33};
+\end{scope}
+  % Node: 32
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2642.0bp,385.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2642.0bp,385.0bp) node {3;2};
+\end{scope}
+  % Node: 31
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1172.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1172.0bp,1029.0bp) node {3;1};
+\end{scope}
+  % Node: 30
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1913.0bp,661.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1913.0bp,661.0bp) node {3;0};
+\end{scope}
+  % Node: 42
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1702.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1702.0bp,1029.0bp) node {4;2};
+\end{scope}
+  % Node: 50
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (3869.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (3869.0bp,1029.0bp) node {5;0};
+\end{scope}
+  % Node: 40
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2081.0bp,937.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2081.0bp,937.0bp) node {4;0};
+\end{scope}
+  % Node: 41
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2452.0bp,845.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2452.0bp,845.0bp) node {4;1};
+\end{scope}
+  % Node: 02
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (4285.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (4285.0bp,1029.0bp) node {0;2};
+\end{scope}
+  % Node: 01
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2945.0bp,1029.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2945.0bp,1029.0bp) node {0;1};
+\end{scope}
+  % Node: 52
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (2491.0bp,477.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (2491.0bp,477.0bp) node {5;2};
+\end{scope}
+  % Node: 51
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (1858.0bp,569.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (1858.0bp,569.0bp) node {5;1};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

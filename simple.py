@@ -15,9 +15,11 @@ automate_states = {} # dictionnaire contenant tous les etats de l'automate : les
 
 # La fonction add_automate_state est appelee lors du parcours de l'automate et permet de creer un dict contenant tous les etats de l'automate une et une fois seulement
 # Si le label fait deja partie du dictionnaire alors, elle ne fait rien, sinon elle ajoute le nouveau label et cree l'etat correspondant avec add_state()
-def add_automate_state(state_label): 
+def add_automate_state(state_label, state_index): 
     if (state_label not in automate_states):
-        automate_states[state_label] = automate.add_state()
+        automate_states[state_label] = [automate.add_state(), state_index]
+        state_index += 1
+    return state_index
 
 
 def create_states_dico(ref_string, levenshtein_distance):
@@ -93,11 +95,10 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
         is_last_column = nb_consummed_chars == len(ref_string)
         is_last_row = nb_elementary_operations == levenshtein_distance
         if is_last_column and is_last_row:
-            output_arc_label = "epsilon:epsilon:0"
-            
+            output_arc_label = "epsilon" + "::" + "epsilon" + "::" + str(0)            
             set_arcs[output_arc_label] = []
         elif is_last_column:
-            insertion_arc_label = "*:epsilon:1"
+            insertion_arc_label = "*" + "::" + "epsilon" + "::" + str(1)
             arcs_labels.append(insertion_arc_label)
 
             up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations + 1)
@@ -106,7 +107,7 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
             set_arcs[insertion_arc_label] = [up_dst_label]
 
         elif is_last_row:
-            accepting_arc_label = charFromRefStr + ":" + charFromRefStr + ":" + str(weights[0])
+            accepting_arc_label = charFromRefStr + "::" + charFromRefStr + "::" + str(weights[0])
             arcs_labels.append(accepting_arc_label)
 
             right_dst_label = str(nb_consummed_chars  + 1) + ";" + str(nb_elementary_operations)
@@ -115,9 +116,9 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
             set_arcs[accepting_arc_label] = [right_dst_label]
 
         else:
-            accepting_arc_label = charFromRefStr + ":" + charFromRefStr + ":" + str(weights[0])
-            deletion_arc_label = "epsilon:" + charFromRefStr + ":" + str(weights[1])
-            substitution_arc_label = "*:" + charFromRefStr + ":" + str(weights[1])
+            accepting_arc_label = charFromRefStr + "::" + charFromRefStr + "::" + str(weights[0])
+            deletion_arc_label = "epsilon::" + charFromRefStr + "::" + str(weights[1])
+            substitution_arc_label = "*::" + charFromRefStr + "::" + str(weights[1])
             insertion_arc_label = substitution_arc_label
             arcs_labels.append(accepting_arc_label)
             arcs_labels.append(deletion_arc_label)
@@ -142,10 +143,61 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
 
     return(automata) 
 
+def Automata_Building(ref_string, levenshtein_distance, output_weight):
+    dict_automata = Levenshtein_Automata_Dico(ref_string, levenshtein_distance)
+    # print(dict_automata)
+
+    label_initial_state = "0;0"
+    label_final_state = str(len(ref_string)) + ";" + str(levenshtein_distance)
+    # Une fois l'automate represente sous forme de dictionnaire, on cree l'automate grace aux fonctions de la librairie openfst
+
+    # Creation de tous les etats de l'automate (etats source et de destination confondus)
+    # La fonction add automate state cree un dictionnaire automate states dont les cles sont les labels des etats et les valeurs associees sont les etats crees grace a la fonction de creation d'etats d'openfst
+    
+    state_index = 1
+    for src_label, set_arcs in dict_automata.iteritems():
+        state_index = add_automate_state(src_label, state_index)
+        for arc_label, dst_states in set_arcs.iteritems():
+            for dst_label in dst_states:
+                state_index = add_automate_state(dst_label, state_index)
+
+    # print(automate_states)
+
+    # # Creation des arcs de l'automate
+
+    for src_label, set_arcs in dict_automata.iteritems():
+        for arc_label, dst_states in set_arcs.iteritems():
+            label_info = arc_label.split("::")
+            transmitted_char = int(convertSymToLabel(label_info[0]))
+            consummed_char = int(convertSymToLabel(label_info[1]))
+            weight = int(label_info[2])
+            src_state_index = automate_states[src_label][1]
+            print(transmitted_char, consummed_char, weight)
+            for dst_label in dst_states:
+                # print(dst_label)
+                dst_state_index = automate_states[dst_label][1]
+                automate.add_arc(
+                    src_state_index,
+                    fst.Arc(
+                        transmitted_char,
+                        consummed_char,
+                        fst.Weight(automate.weight_type(), weight),
+                        dst_state_index)
+                )
+    
+    automate.set_start(automate_states[label_initial_state][1])
+    automate.set_final(automate_states[label_final_state][1], fst.Weight(automate.weight_type(), output_weight))
+    automate.draw("automata.dot")
+    print(automate)
+
+    return(automate)
+
+
 def main():
 
     dict_automata = Levenshtein_Automata_Dico("manon", 2)
-    print_dot_format(dict_automata, "manon", 2)
+    # print_dot_format(dict_automata, "manon", 2)
+    Automata_Building("manon", 2, 5)
     
   
     

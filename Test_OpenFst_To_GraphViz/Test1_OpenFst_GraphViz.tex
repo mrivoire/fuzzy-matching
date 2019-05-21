@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: 0 -> 1
+  \draw [->] (42.253bp,182.92bp) .. controls (37.051bp,176.94bp) and (31.865bp,169.67bp)  .. (29.0bp,162.0bp) .. controls (25.999bp,153.97bp) and (24.886bp,144.79bp)  .. (24.874bp,126.06bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (52.5bp,153.0bp) node {1:2 - 3.0};
+  % Edge: 0 -> 2
+  \draw [->] (68.499bp,181.04bp) .. controls (71.542bp,175.22bp) and (74.459bp,168.53bp)  .. (76.0bp,162.0bp) .. controls (87.028bp,115.28bp) and (86.503bp,100.84bp)  .. (76.0bp,54.0bp) .. controls (75.274bp,50.763bp) and (74.223bp,47.474bp)  .. (68.92bp,35.022bp);
+  \draw (107.5bp,108.0bp) node {1:3 - 2.0};
+  % Edge: 1 -> 2
+  \draw [->] (24.806bp,89.909bp) .. controls (24.189bp,79.136bp) and (24.637bp,65.389bp)  .. (29.0bp,54.0bp) .. controls (30.797bp,49.309bp) and (33.473bp,44.786bp)  .. (43.032bp,32.647bp);
+  \draw (52.5bp,63.0bp) node {2:1 - 1.0};
+  % Node: 1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (27.0bp,108.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (27.0bp,108.0bp) node {s1};
+\end{scope}
+  % Node: 0
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (58.0bp,198.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (58.0bp,198.0bp) node {s0};
+\end{scope}
+  % Node: 2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (59.0bp,18.0bp) ellipse (27.0bp and 18.0bp);
+  \draw (59.0bp,18.0bp) node {s2};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

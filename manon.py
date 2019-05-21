@@ -136,7 +136,7 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
             insertion_arc_label = "*:epsilon:1"
             arcs_labels.append(insertion_arc_label)
 
-            up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations)
+            up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations + 1)
             dst_states.append(up_dst_label)
 
             set_arcs[insertion_arc_label] = [up_dst_label]
