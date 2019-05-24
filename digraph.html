@@ -7,15 +7,16 @@
 <div id="graph" style="text-align: center;"></div>
 <script>
 
-let graph = 'digraph  {a -> b}'
-fetch('./Test_GraphViz/Test_Levenshtein.dot').then(
-    (r) => {
-        console.log(r)
-    }
-)
 
-d3.select("#graph").graphviz()
+function displayGraph(graph) {
+    d3.select("#graph").graphviz()
     .fade(false)
     .renderDot(graph);
+}
+
+fetch('automata.dot').then(response => response.text())
+                     .then(text => displayGraph(text))
+
+
 
 </script>
