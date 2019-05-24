@@ -17,7 +17,7 @@ automate_states = {} # dictionnaire contenant tous les etats de l'automate : les
 # Si le label fait deja partie du dictionnaire alors, elle ne fait rien, sinon elle ajoute le nouveau label et cree l'etat correspondant avec add_state()
 def add_automate_state(state_label, state_index): 
     if (state_label not in automate_states):
-        automate_states[state_label] = [automate.add_state(), state_index]
+        automate_states[state_label] = [state_index]
         state_index += 1
     return state_index
 
@@ -57,6 +57,9 @@ def convertSymToLabel(symbol):
     elif(symbol == "epsilon"):
         newSym = 1
     return(newSym)
+
+def label2int(label, ref_string):
+    return (len(ref_string)+1)*int(label[2])+int(label[0])
 
 def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
     # Creation des etats de l'automate 
@@ -171,11 +174,11 @@ def Automata_Building(ref_string, levenshtein_distance, output_weight):
             transmitted_char = int(convertSymToLabel(label_info[0]))
             consummed_char = int(convertSymToLabel(label_info[1]))
             weight = int(label_info[2])
-            src_state_index = automate_states[src_label][1]
-            print(transmitted_char, consummed_char, weight)
+            src_state_index = label2int(src_label, ref_string)
+            # print(transmitted_char, consummed_char, weight)
             for dst_label in dst_states:
                 # print(dst_label)
-                dst_state_index = automate_states[dst_label][1]
+                dst_state_index = label2int(dst_label, ref_string)
                 automate.add_arc(
                     src_state_index,
                     fst.Arc(
@@ -185,8 +188,8 @@ def Automata_Building(ref_string, levenshtein_distance, output_weight):
                         dst_state_index)
                 )
     
-    automate.set_start(automate_states[label_initial_state][1])
-    automate.set_final(automate_states[label_final_state][1], fst.Weight(automate.weight_type(), output_weight))
+    automate.set_start(automate_states[label_initial_state][0])
+    automate.set_final(automate_states[label_final_state][0], fst.Weight(automate.weight_type(), output_weight))
     automate.draw("automata.dot")
     print(automate)
 

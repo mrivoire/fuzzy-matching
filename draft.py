@@ -7,9 +7,14 @@ import graphviz
 import dot2tex
 import openfst_python as fst
 
-automate = fst.Fst()
-
 def SimpleAutomata():
+    automate = fst.Fst()
+
+    # for idx in range(2):
+    #     automate.add_state()
+    #     automate.add_arc()
+    #     print(automate.add_state())
+
     src_state_label = "0;0"
     src_state_index = automate.add_state()
 
@@ -24,14 +29,17 @@ def SimpleAutomata():
     automate.add_arc(
         src_state_index,
         fst.Arc(
+
             transmitted_char,
             consummed_char,
             fst.Weight(automate.weight_type(), weight),
             dst_state_index
         )
     )
+    automate.set_start(src_state_index)
+    automate.set_final(dst_state_index, fst.Weight(automate.weight_type(), 1.5))
     
-    print(automate)
+    return automate
 
 
 def convertSymToLabel(symbol):
@@ -81,7 +89,7 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
     # Pour les poids on pose que : d = 0 si on consomme un caractere, et 1 si on consomme etoile ou epsilon (insertion, deletion, substitution)
     # Pour les caracteres consommes et emis, on considere que les caracteres de la chaine de reference sont les caracteres consommes et les caracteres de la chaine hypothese seront les caracteres emis 
     
-    
+    automate = fst.Fst()
     automata = {}
     weights = [0, 1, 1,1]
     arcs_labels = []
@@ -111,20 +119,27 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
         is_last_column = nb_consummed_chars == len(ref_string)
         is_last_row = nb_elementary_operations == levenshtein_distance
         if is_last_column and is_last_row:
-            output_arc_label = "epsilon" + "::" + "epsilon" + "::" + str(0)            
+            output_arc_label = "epsilon" + ":" + "epsilon" + ":" + str(0)            
             set_arcs[output_arc_label] = []
         elif is_last_column:
-            insertion_arc_label = "*" + "::" + "epsilon" + "::" + str(1)
+            insertion_arc_label = "*" + ":" + "epsilon" + ":" + str(1)
             arcs_labels.append(insertion_arc_label)
 
             up_dst_label = str(nb_consummed_chars) + ";" + str(nb_elementary_operations + 1)
             dst_states.append(up_dst_label)
 
             set_arcs[insertion_arc_label] = [up_dst_label]
+            insertion_split = insertion_arc_label.split(":")
+            consummed_char = insertion_split[0]
+            transmitted_char = insertion_split[1]
+            weight = insertion_split[2]
+            dst_state_index = label2int(up_dst_label, ref_string)
+            automate.add_arc(state_index, fst.Arc(consummed_char, transmitted_char, fst.Weight(automate.weight_type(), weight), dst_state_index))
 
         elif is_last_row:
-            accepting_arc_label = char_from_ref_str + "::" + char_from_ref_str + "::" + str(weights[0])
+            accepting_arc_label = char_from_ref_str + ":" + char_from_ref_str + ":" + str(weights[0])
             arcs_labels.append(accepting_arc_label)
+            accepting_split = accepting_arc_label.split(":")
 
             right_dst_label = str(nb_consummed_chars  + 1) + ";" + str(nb_elementary_operations)
             dst_states.append(right_dst_label)
@@ -132,9 +147,9 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
             set_arcs[accepting_arc_label] = [right_dst_label]
 
         else:
-            accepting_arc_label = char_from_ref_str + "::" + char_from_ref_str + "::" + str(weights[0])
-            deletion_arc_label = "epsilon::" + char_from_ref_str + "::" + str(weights[1])
-            substitution_arc_label = "*::" + char_from_ref_str + "::" + str(weights[1])
+            accepting_arc_label = char_from_ref_str + ":" + char_from_ref_str + ":" + str(weights[0])
+            deletion_arc_label = "epsilon::" + char_from_ref_str + ":" + str(weights[1])
+            substitution_arc_label = "*:" + char_from_ref_str + ":" + str(weights[1])
             insertion_arc_label = substitution_arc_label
             arcs_labels.append(accepting_arc_label)
             arcs_labels.append(deletion_arc_label)
@@ -183,7 +198,9 @@ def Levenshtein_Automata_Dico(ref_string, levenshtein_distance):
 def main():
 
     # Levenshtein_Automata_Dico("manon", 2)
-    SimpleAutomata()
+    # SimpleAutomata()
+    print(SimpleAutomata())
+
  
     
 if __name__ == "__main__":
