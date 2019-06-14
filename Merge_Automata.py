@@ -61,7 +61,7 @@ def ReduceStatesDict():
 
 def SimpleAutomata(ref_string, levenshtein_distance):
     final_dst_state_label = str(len(ref_string)) + ";" + str(levenshtein_distance)
- 
+
     for consummed_char_number in range(len(ref_string) + 1):
         for operations_number in range(levenshtein_distance + 1):
             src_state_label = str(consummed_char_number) + ";" + str(operations_number)
@@ -96,9 +96,11 @@ def SimpleAutomata(ref_string, levenshtein_distance):
                 insertion_dst_state_label = str(consummed_char_number) + ";" + str(operations_number + 1)
                 insertion_arc_label = "*:" + ref_string[consummed_char_number] + ":" + str(1) 
                 add_arc_to_automate(src_state_label, insertion_dst_state_label, insertion_arc_label, automate, states_dict)
+    
+    for nb_final_states in range(levenshtein_distance + 1):
+        final_dst_state_label = str(len(ref_string)) + ";" + str(nb_final_states)
+        automate.set_final(states_dict[final_dst_state_label], fst.Weight(automate.weight_type(), 1.5))
 
-
-    automate.set_final(states_dict[final_dst_state_label], fst.Weight(automate.weight_type(), 1.5))
     automate.draw("automata.dot")
     print(automate)
     return automate, states_dict
@@ -125,8 +127,6 @@ def main():
     CloneAndDraw(n)
     FinishAutomata()
     automate.minimize(allow_nondet=True).draw("automata.dot")
-    # MergeAutomata(automata, "marion", 2)
-    
   
     
 if __name__ == "__main__":
